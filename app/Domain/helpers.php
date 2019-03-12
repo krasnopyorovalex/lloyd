@@ -98,7 +98,7 @@ if (! function_exists('add_css_class')) {
     {
         $classes = [];
         if (count($item->menuItems)) {
-            array_push($classes, 'has__child');
+            array_push($classes, 'dropdown');
         }
         if (trim($item->link,'/') == request()->path() || request()->path() == $item->link) {
             array_push($classes, 'active');

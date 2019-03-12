@@ -28,20 +28,6 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \App\Gallery|null $gallery
  * @property-read string $url
  * @property-read \App\Slider|null $slider
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Page newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Page newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Page query()
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Page whereAlias($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Page whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Page whereDescription($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Page whereGalleryId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Page whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Page whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Page whereSliderId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Page whereTemplate($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Page whereText($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Page whereTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Page whereUpdatedAt($value)
  */
 class Page extends Model
 {
@@ -50,10 +36,6 @@ class Page extends Model
     private $templates = [
         'page.page' => 'Информационная',
         'page.index' => 'Главная',
-        'page.list' => 'Список(новости/статьи)',
-        'page.guestbook' => 'Отызвы',
-        'page.booking' => 'Страница бронирования',
-        'page.gallery' => 'Фотогалерея',
         'page.contacts' => 'Контакты'
     ];
 

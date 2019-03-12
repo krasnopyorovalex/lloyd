@@ -15,10 +15,10 @@ class LinkGeneratorService
      */
     private $models = [
         'App\Page' => 'Страницы',
-        'App\Service' => 'Номера',
-        'App\Article' => 'Статьи',
-        'App\Info' => 'Новости',
-        'App\OurService' => 'Наши услуги',
+        'App\Producer' => 'Поставщики',
+        //'App\Service' => 'Номера',
+        //'App\Article' => 'Статьи',
+        //'App\Info' => 'Новости'
     ];
 
     /**

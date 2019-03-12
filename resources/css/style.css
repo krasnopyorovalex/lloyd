@@ -1,0 +1,45 @@
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 1em;
+}
+p {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+}
+.box_aside img{
+    width: 100%;
+    height: auto;
+}
+.icons {
+    text-align: center;
+}
+.icons .icon {
+    display: inline-block;
+    margin: 0 2em;
+    width: 110px;
+    vertical-align: top;
+    text-align: center;
+}
+.icons .icon .img {
+    min-height: 94px;
+}
+.icons .icon .name {
+    margin: 1em 0 0 0;
+    font-weight: bold;
+    line-height: 18px;
+}
+.projects__in-main .thumb img {
+    height: 202px;
+}
+
+.projects__in-main .h2 {
+    margin-bottom: 41px
+}
+.well2 {
+    padding: 2em 0;
+}
+.contacts__block table td {
+    text-align: right;
+    padding: 3px 50px 16px 0;
+    line-height: 1.3em;
+    vertical-align: top;
+}

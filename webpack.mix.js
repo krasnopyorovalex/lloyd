@@ -11,6 +11,11 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-    .sass('resources/assets/sass/app.scss', 'public/css')
+mix.js('resources/js/app.js', 'public/js/app.js')
+    .styles([
+        'resources/css/camera.css',
+        'resources/css/mailform.css',
+        'resources/css/search.css',
+        'resources/css/style.css'
+    ], 'public/css/all.css')
     .version();

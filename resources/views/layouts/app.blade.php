@@ -9,140 +9,63 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="theme-color" content="#eee">
     @stack('og')
-    <link href="{{ asset('css/app.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ mix('css/all.css') }}"/>
     <link href="{{ asset('favicon.ico') }}" rel="shortcut icon" type="image/x-icon" />
     <link rel="canonical" href="@yield('canonical', request()->url())"/>
+    <meta name="robots" content="noindex, nofollow" />
 </head>
 <body>
-    <div class="loader">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
+    <div class="page">
+        <header>
+
+            <div class="header-wrapper center767">
+                <ul class="info-list">
+                    <li class="fa fa-phone"><a href="tel:+79789098254">+7 (978) 909 82 54</a></li>
+                    <li class="fa fa-envelope"><a href="mailto:ceo@russpeccoat.ru">ceo@russpeccoat.ru</a></li>
+                    <li class="fa fa-map-marker">
+                        <address>г. Симферополь, ул. Балаклавская, 68</address>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="stuck_container" class="stuck_container">
+
+                <div class="navbar-header">
+                    <img class="brand_img" src="{{ asset('images/logo.png') }}" alt=""/>
+                </div>
+                <nav class="navbar navbar-default navbar-static-top navbar-right" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                    @includeWhen($menu->get('menu_header'), 'layouts.menus.header', ['menu' => $menu])
+                </nav>
+                {{--<div class="sform text-right">--}}
+                    {{--<a class="search-form_toggle" href="index.html#"></a>--}}
+                {{--</div>--}}
+                {{--<div class="search-form">--}}
+                    {{--<form id="search" action="#" method="GET" accept-charset="utf-8">--}}
+                        {{--<label class="search-form_label" for="in">--}}
+                            {{--<input id="in" class="search-form_input" type="text" name="s"--}}
+                                   {{--placeholder="Type your search term here..."/>--}}
+                            {{--<span class="search-form_liveout"></span>--}}
+                        {{--</label>--}}
+                        {{--<button type="submit" class="search-form_submit fa-search"></button>--}}
+                    {{--</form>--}}
+                {{--</div>--}}
+            </div>
+
+        </header>
+
+        @yield('content')
+
+        <footer>
+            <div class="container text-center">
+                <div class="copyright">© Русспецкоут, 2019 г. | Все права защищены</div>
+            </div>
+        </footer>
     </div>
 
-    <header class="header" id="sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <div class="header__logo">
-                        <a href="{{ route('page.show') }}"><img src="{{ asset('img/logo.png') }}" alt="logo"></a>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <div class="middle__block">
-                        <div class="header__contacts">
-                            <div class="header__contacts-items">
-                                <div>
-                                    <svg class="icon">
-                                        <use xlink:href="{{ asset('img/symbols.svg#phone') }}"></use>
-                                    </svg>
-                                    <a href="tel:+79787248938">+7 978 724 89 38</a>
-                                </div>
-                                <div>
-                                    <svg class="icon">
-                                        <use xlink:href="{{ asset('img/symbols.svg#email') }}"></use>
-                                    </svg>
-                                    <a href="mailto:dom2008@mail.ru">dom2008@mail.ru</a>
-                                </div>
-                                <div>
-                                    <svg class="icon icon__address">
-                                        <use xlink:href="{{ asset('img/symbols.svg#address') }}"></use>
-                                    </svg>
-                                    297546, Крым, п.Николаевка, ул. Чудесная, 2, коттедж 8
-                                </div>
-                            </div>
-                            <div class="header__contacts-socials">
-                                @include('layouts.partials.socials')
-                            </div>
-                        </div>
-                        <div class="header__menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
-                            @includeWhen($menu->get('menu_header'), 'layouts.menus.header', ['menu' => $menu])
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    @yield('content')
-
-    <footer itemtype="http://schema.org/WPFooter" itemscope="">
-        <div class="container">
-            <div class="row">
-                <div class="col-5">
-                    <div class="title">Наши контакты</div>
-                    <div class="footer__contacts">
-                        <div>
-                            <svg class="icon">
-                                <use xlink:href="{{ asset('img/symbols.svg#phone') }}"></use>
-                            </svg>
-                            <a href="tel:+79787248938">+7 978 724 89 38</a>
-                        </div>
-                        <div>
-                            <svg class="icon">
-                                <use xlink:href="{{ asset('img/symbols.svg#email') }}"></use>
-                            </svg>
-                            <a href="mailto:dom2008@mail.ru">dom2008@mail.ru</a>
-                        </div>
-                        <div>
-                            <svg class="icon icon__address">
-                                <use xlink:href="{{ asset('img/symbols.svg#address') }}"></use>
-                            </svg>
-                            297546, Крым, п.Николаевка, ул. Чудесная, 2, коттедж 8
-                        </div>
-                    </div>
-                </div>
-                <div class="col-5">
-                    <div class="title">Полезные материалы</div>
-                    <div class="footer__menu">
-                        @includeWhen($menu->get('menu_footer'), 'layouts.menus.footer', ['menu' => $menu])
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="title right">Мы в соцсетях</div>
-                    <div class="footer__socials">
-                        @include('layouts.partials.socials')
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="separator"></div>
-                </div>
-            </div>
-            <div class="row flex-center">
-                <div class="col-6">
-                    <div class="copyright">© 2008-{{ date('Y') }} Вилла villa-sany.ru</div>
-                </div>
-                <div class="col-6">
-                    <div class="develop">
-                        <div class="develop__link">
-                            <a href="https://krasber.ru" rel="nofollow" target="_blank">
-                                Создание, продвижение и <br/>техподдержка сайтов
-                            </a>
-                        </div>
-                        <div class="develop__logo">
-                            <a href="https://krasber.ru" target="_blank" rel="nofollow">
-                                <img src="{{ asset('img/krasber.svg') }}" alt="Веб-студия Красбер">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="mobile__menu">
-        @includeWhen($menu->get('menu_header'), 'layouts.menus.footer_mobile', ['menu' => $menu])
-        <div class="socials">
-            @include('layouts.partials.socials')
-        </div>
-        <div class="close-menu-btn"></div>
-        <div class="menu-overlay-mob"></div>
-    </div>
-
-    <div class="loader__bg"></div><div class="notify"></div>
-    <script src="{{ asset('js/jquery.3.3.1.min.js') }}"></script>
-    <script src="{{ asset('js/app.min.js') }}" async></script>
+    <script src="{{ asset('js/jquery-2.2.4.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-migrate-1.2.1.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

@@ -27,28 +27,35 @@
                     <div class="tab-content">
                         <div class="tab-pane active" id="main">
 
-                            @select(['name' => 'slider_id', 'label' => 'Слайдер', 'items' => $sliders, 'entity' => $page])
-                            @select(['name' => 'gallery_id', 'label' => 'Галерея', 'items' => $galleries, 'entity' => $page])
+                            <div class="row">
+                                <div class="col-md-9">
+                                    @input(['name' => 'name', 'label' => 'Название', 'entity' => $page])
+                                    @input(['name' => 'title', 'label' => 'Title', 'entity' => $page])
+                                    @input(['name' => 'description', 'label' => 'Description', 'entity' => $page])
 
-                            <div class="form-group">
-                                <label for="template">Шаблон страницы:</label>
-                                <select class="form-control border-blue border-xs select-search" id="template" name="template" data-width="100%">
-                                    @foreach ($page->getTemplates() as $key => $value)
-                                        <option value="{{ $key }}" {{ $key == $page->template ? 'selected' : '' }}>{{ $value }}</option>
-                                    @endforeach
-                                </select>
+                                    @input(['name' => 'alias', 'label' => 'Alias', 'entity' => $page])
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="template">Шаблон страницы:</label>
+                                        <select class="form-control border-blue border-xs select-search" id="template" name="template" data-width="100%">
+                                            @foreach ($page->getTemplates() as $key => $value)
+                                                <option value="{{ $key }}" {{ $key == $page->template ? 'selected' : '' }}>{{ $value }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    @select(['name' => 'slider_id', 'label' => 'Слайдер', 'items' => $sliders, 'entity' => $page])
+                                    @select(['name' => 'gallery_id', 'label' => 'Галерея', 'items' => $galleries, 'entity' => $page])
+                                </div>
                             </div>
 
-                            @input(['name' => 'name', 'label' => 'Название', 'entity' => $page])
-                            @input(['name' => 'title', 'label' => 'Title', 'entity' => $page])
-                            @input(['name' => 'description', 'label' => 'Description', 'entity' => $page])
-
-                            @input(['name' => 'alias', 'label' => 'Alias', 'entity' => $page])
-
-                            @textarea(['name' => 'text', 'label' => 'Текст', 'entity' => $page])
-                            @checkbox(['name' => 'is_published', 'label' => 'Опубликовано?', 'entity' => $page])
-
-                            @submit_btn()
+                            <div class="row">
+                                <div class="col-md-12">
+                                    @textarea(['name' => 'text', 'label' => 'Текст', 'entity' => $page])
+                                    @checkbox(['name' => 'is_published', 'label' => 'Опубликовано?', 'entity' => $page])
+                                    @submit_btn()
+                                </div>
+                            </div>
                         </div>
 
                         <div class="tab-pane" id="image">

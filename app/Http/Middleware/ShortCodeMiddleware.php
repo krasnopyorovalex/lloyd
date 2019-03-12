@@ -36,16 +36,12 @@ class ShortCodeMiddleware
                 '#(<p(.*)>)?{sitemap}(<\/p>)?#' => function () {
                     $pages = $this->dispatch(new GetAllPagesQuery());
                     $articles = $this->dispatch(new GetAllArticlesQuery(true));
-                    $services = $this->dispatch(new GetAllServicesQuery());
                     $news = $this->dispatch(new GetAllInfosQuery(true));
-                    $ourServices = $this->dispatch(new GetAllOurServicesQuery());
 
                     return view('layouts.shortcodes.sitemap', [
                         'pages' => $pages,
                         'articles' => $articles,
-                        'services' => $services,
-                        'news' => $news,
-                        'ourServices' => $ourServices
+                        'news' => $news
                     ]);
                 }
             ],
