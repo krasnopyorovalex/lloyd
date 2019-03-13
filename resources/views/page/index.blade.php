@@ -49,12 +49,12 @@
         <section class="well2 bg-light">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-md-8 col-sm-12 col-xs-12">
                         <div class="map">
                             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3b147f7596759db090962a344a4e0d09b2d2648ebf77a135e5f3c01a640def33&amp;source=constructor" width="100%" height="475" frameborder="0"></iframe>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
                         <div class="contacts__block">
                             <table>
                                 <tbody>

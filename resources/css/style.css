@@ -32,14 +32,59 @@ p {
 }
 
 .projects__in-main .h2 {
-    margin-bottom: 41px
+    margin-bottom: 41px;
 }
 .well2 {
     padding: 2em 0;
+}
+.contacts__block table {
+    width: 100%;
 }
 .contacts__block table td {
     text-align: right;
     padding: 3px 50px 16px 0;
     line-height: 1.3em;
     vertical-align: top;
+}
+footer {
+    padding: 2em 0;
+}
+footer .contacts li {
+    display: block;
+    position: relative;
+}
+footer .contacts li:before {
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+    margin: 4px 10px 0 0;
+}
+footer .contacts li + li {
+    margin: 5px 0 0 0;
+}
+.footer__menu ul li {
+    display: inline-block;
+}
+.footer__menu ul li + li {
+    margin: 5px 0 0 10px;
+}
+footer .develop {
+    text-align: right;
+}
+footer .develop__link {
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+footer .develop__link a {
+    font-size: 15px;
+    line-height: normal;
+}
+footer .develop__logo {
+    display: inline-block;
+    width: 130px;
+}
+footer .copyright {
+    display: block;
+    padding: 1.2em 0 0 0;
 }

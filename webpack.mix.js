@@ -13,6 +13,7 @@ let mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js/app.js')
     .styles([
+        'resources/css/bootstrap.css',
         'resources/css/camera.css',
         'resources/css/mailform.css',
         'resources/css/search.css',

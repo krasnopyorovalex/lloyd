@@ -9,7 +9,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="theme-color" content="#eee">
     @stack('og')
-    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ mix('css/all.css') }}"/>
     <link href="{{ asset('favicon.ico') }}" rel="shortcut icon" type="image/x-icon" />
     <link rel="canonical" href="@yield('canonical', request()->url())"/>
@@ -35,7 +34,7 @@
                     <img class="brand_img" src="{{ asset('images/logo.png') }}" alt=""/>
                 </div>
                 <nav class="navbar navbar-default navbar-static-top navbar-right" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
-                    @includeWhen($menu->get('menu_header'), 'layouts.menus.header', ['menu' => $menu])
+                    @includeWhen($menu->get('menu_header'), 'layouts.menus.header')
                 </nav>
                 {{--<div class="sform text-right">--}}
                     {{--<a class="search-form_toggle" href="index.html#"></a>--}}
@@ -57,8 +56,42 @@
         @yield('content')
 
         <footer>
-            <div class="container text-center">
-                <div class="copyright">© Русспецкоут, 2019 г. | Все права защищены</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="contacts">
+                            <li class="fa fa-map-marker">295048, Республика Крым, г. Симферополь, ул. Балаклавская, 68</li>
+                            <li class="fa fa-phone"><a href="tel:+79789098254">+7 (978) 909 82 54</a></li>
+                            <li class="fa fa-phone"><a href="tel:+79787092009">+7 (978) 709 20 09</a></li>
+                            <li class="fa fa-envelope"><a href="mailto:ceo@russpeccoat.ru">ceo@russpeccoat.ru</a></li>
+                            <li class="fa fa-envelope"><a href="mailto:info@russpeccoat.ru">info@russpeccoat.ru</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        @includeWhen($menu->get('menu_header'), 'layouts.menus.footer')
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="copyright">© Русспецкоут, {{ date('Y') }} г. | Все права защищены</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="develop">
+                            <div class="develop__link">
+                                <a href="https://krasber.ru" rel="nofollow" target="_blank">
+                                    Создание, продвижение и <br>техподдержка сайтов
+                                </a>
+                            </div>
+                            <div class="develop__logo">
+                                <a href="https://krasber.ru" target="_blank" rel="nofollow">
+                                    <img src="{{ asset('images/logo_green.svg') }}" alt="Веб-студия Красбер">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
