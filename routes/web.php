@@ -18,7 +18,7 @@ Auth::routes();
 Route::get('sitemap.xml', 'SitemapController@xml')->name('sitemap.xml');
 
 Route::group(['middleware' => ['redirector', 'shortcode']], function () {
-    Route::get('{alias}', 'ServiceController@show')->name('service.show');
+    Route::get('{alias}', 'PageController@show')->name('page.show');
     Route::get('/{alias?}/{page?}', 'PageController@show')->name('page.show')->where('page', '[0-9]+');
     Route::get('producers/{alias}', 'ProducerController@show')->name('producer.show');
     Route::get('projects/{alias}', 'ProjectController@show')->name('project.show');

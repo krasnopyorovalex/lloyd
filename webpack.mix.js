@@ -13,10 +13,9 @@ let mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js/app.js')
     .styles([
-        'resources/css/bootstrap.css',
-        'resources/css/camera.css',
-        'resources/css/mailform.css',
-        'resources/css/search.css',
-        'resources/css/style.css'
+        'resources/css/bootstrap-grid.css',
+        'resources/css/app.min.css',
+        'resources/css/style.css',
+        'resources/css/responsive.css'
     ], 'public/css/all.css')
     .version();

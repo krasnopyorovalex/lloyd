@@ -19,36 +19,38 @@
         <header>
 
             <div class="header-wrapper center767">
-                <ul class="info-list">
-                    <li class="fa fa-phone"><a href="tel:+79789098254">+7 (978) 909 82 54</a></li>
-                    <li class="fa fa-envelope"><a href="mailto:ceo@russpeccoat.ru">ceo@russpeccoat.ru</a></li>
-                    <li class="fa fa-map-marker">
-                        <address>г. Симферополь, ул. Балаклавская, 68</address>
-                    </li>
-                </ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="info-list">
+                                <li class="fa fa-phone"><a href="tel:+79789098254">+7 (978) 909 82 54</a></li>
+                                <li class="fa fa-envelope"><a href="mailto:ceo@russpeccoat.ru">ceo@russpeccoat.ru</a></li>
+                                <li class="fa fa-map-marker">
+                                    <address>г. Симферополь, ул. Балаклавская, 68</address>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="stuck_container" class="stuck_container">
-
-                <div class="navbar-header">
-                    <img class="brand_img" src="{{ asset('images/logo.png') }}" alt=""/>
+                <div class="container">
+                    <div class="row align-items-center header__menu">
+                        <div class="col-md-3">
+                            <div class="navbar-header">
+                                <a href="/">
+                                    <img class="brand_img" src="{{ asset('images/logo.png') }}" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <nav class="navbar navbar-default navbar-static-top center" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                                @includeWhen($menu->get('menu_header'), 'layouts.menus.header')
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-                <nav class="navbar navbar-default navbar-static-top navbar-right" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
-                    @includeWhen($menu->get('menu_header'), 'layouts.menus.header')
-                </nav>
-                {{--<div class="sform text-right">--}}
-                    {{--<a class="search-form_toggle" href="index.html#"></a>--}}
-                {{--</div>--}}
-                {{--<div class="search-form">--}}
-                    {{--<form id="search" action="#" method="GET" accept-charset="utf-8">--}}
-                        {{--<label class="search-form_label" for="in">--}}
-                            {{--<input id="in" class="search-form_input" type="text" name="s"--}}
-                                   {{--placeholder="Type your search term here..."/>--}}
-                            {{--<span class="search-form_liveout"></span>--}}
-                        {{--</label>--}}
-                        {{--<button type="submit" class="search-form_submit fa-search"></button>--}}
-                    {{--</form>--}}
-                {{--</div>--}}
             </div>
 
         </header>
@@ -58,7 +60,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-7">
                         <ul class="contacts">
                             <li class="fa fa-map-marker">295048, Республика Крым, г. Симферополь, ул. Балаклавская, 68</li>
                             <li class="fa fa-phone"><a href="tel:+79789098254">+7 (978) 909 82 54</a></li>
@@ -67,7 +69,7 @@
                             <li class="fa fa-envelope"><a href="mailto:info@russpeccoat.ru">info@russpeccoat.ru</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-6 text-right">
+                    <div class="col-md-5 text-right">
                         @includeWhen($menu->get('menu_header'), 'layouts.menus.footer')
                     </div>
                 </div>

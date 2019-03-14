@@ -8,43 +8,34 @@
     <meta property="og:url" content="{{ request()->getUri() }}">
     <meta property="og:image" content="{{ asset($page->image ? $page->image->path : 'img/logo.png') }}">
     <meta property="og:description" content="{{ $page->description }}">
-    <meta property="og:site_name" content="Вилла «SANY»">
+    <meta property="og:site_name" content="Специализированная лакокрасочная компания Русспецкоут">
     <meta property="og:locale" content="ru_RU">
 @endpush
 
 @section('content')
-    @includeWhen($page->slider, 'layouts.sections.slider', ['slider' => $page->slider])
 
-    <section class="breadcrumbs">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>{{ $page->name }}</h1>
-                    <ul>
-                        <li><a href="{{ route('page.show') }}">Главная</a></li>
-                        <li>{{ $page->name }}</li>
-                    </ul>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumbs">
+                    <li><a href="{{ route('page.show') }}">Главная</a></li>
+                    <li>{{ $page->name }}</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
 
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-9 flex-start">
-                    <div class="content page__content">
+        <section class="well2 bg-light page__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>{{ $page->name }}</h1>
                         {!! $page->text !!}
                     </div>
                 </div>
-                <div class="col-3 flex-start">
-                    @include('layouts.forms.sb_booking')
-                </div>
             </div>
-        </div>
+        </section>
     </main>
-
-
-    @includeWhen($page->gallery, 'layouts.sections.gallery', ['gallery' => $page->gallery])
 
 @endsection
