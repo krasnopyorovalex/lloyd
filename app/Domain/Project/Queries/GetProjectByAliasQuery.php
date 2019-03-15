@@ -29,6 +29,6 @@ class GetProjectByAliasQuery
      */
     public function handle()
     {
-        return Project::where('alias', $this->alias)->where('is_published', '1')->firstOrFail();
+        return Project::where('alias', $this->alias)->firstOrFail();
     }
 }

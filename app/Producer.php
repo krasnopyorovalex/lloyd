@@ -13,7 +13,7 @@ class Producer extends Model
     /**
      * @var array
      */
-    protected $fillable = ['name', 'title', 'description', 'text', 'preview', 'alias'];
+    protected $fillable = ['name', 'title', 'description', 'text', 'about', 'preview', 'alias'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\MorphOne

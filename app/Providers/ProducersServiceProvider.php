@@ -15,6 +15,6 @@ class ProducersServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('view')->composer('*', 'App\Http\ViewComposers\ProducerComposer');
+        $this->app->make('view')->composer('page.index', 'App\Http\ViewComposers\ProducerComposer');
     }
 }

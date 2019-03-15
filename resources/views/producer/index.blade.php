@@ -29,7 +29,7 @@
                     <div class="col-md-9">
                         <!-- Tab panes -->
                         <div class="tab-content">
-                            <div class="tab-pane active" id="about">Home Tab.</div>
+                            <div class="tab-pane active" id="about">{!! $producer->about !!}</div>
                             <div class="tab-pane" id="projects">Profile Tab.</div>
                             <div class="tab-pane" id="production">Messages Tab.</div>
                         </div>

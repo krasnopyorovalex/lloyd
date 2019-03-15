@@ -15,6 +15,6 @@ class IconsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('view')->composer('*', 'App\Http\ViewComposers\IconComposer');
+        $this->app->make('view')->composer('page.index', 'App\Http\ViewComposers\IconComposer');
     }
 }

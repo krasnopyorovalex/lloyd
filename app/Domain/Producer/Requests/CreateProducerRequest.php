@@ -18,6 +18,7 @@ class CreateProducerRequest extends Request
             'title' => 'required|string|max:512',
             'description' => 'string|max:512',
             'text' => 'string|nullable',
+            'about' => 'string|nullable',
             'preview' => 'string|nullable',
             'image' => 'image',
             'icon' => 'image'

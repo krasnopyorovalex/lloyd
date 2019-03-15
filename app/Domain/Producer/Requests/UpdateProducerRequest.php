@@ -18,6 +18,7 @@ class UpdateProducerRequest extends Request
             'title' => 'required|string|max:512',
             'description' => 'string|max:512',
             'text' => 'string|nullable',
+            'about' => 'string|nullable',
             'preview' => 'string|nullable',
             'image' => 'image',
             'imageAlt' => 'string|max:255',

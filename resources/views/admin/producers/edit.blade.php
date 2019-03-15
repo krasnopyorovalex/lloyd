@@ -40,6 +40,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     @textarea(['name' => 'preview', 'label' => 'Превью для главной', 'id' => 'editor-full2', 'entity' => $producer])
+                                    @textarea(['name' => 'about', 'label' => 'Текст для вкладки - О поставщике', 'id' => 'editor-full3', 'entity' => $producer])
                                     @textarea(['name' => 'text', 'label' => 'Текст', 'entity' => $producer])
                                     @submit_btn()
                                 </div>

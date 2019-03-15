@@ -25,6 +25,7 @@
                 @imageInput(['name' => 'image', 'type' => 'file', 'label' => 'Выберите изображение на компьютере'])
                 @imageInput(['name' => 'icon', 'type' => 'file', 'label' => 'Иконка поставщика'])
                 @textarea(['name' => 'preview', 'label' => 'Превью для главной', 'id' => 'editor-full2'])
+                @textarea(['name' => 'about', 'label' => 'Текст для вкладки - О поставщике', 'id' => 'editor-full3'])
                 @textarea(['name' => 'text', 'label' => 'Текст'])
 
                 @submit_btn()

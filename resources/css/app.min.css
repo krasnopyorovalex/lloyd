@@ -6563,7 +6563,7 @@ article + article {
   clear: both
 }
 .box_aside {
-  float: left
+  display: block;
 }
 .box_cnt {
   padding: 20px 0 0 15px

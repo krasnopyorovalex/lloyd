@@ -150,6 +150,9 @@ $(function() {
             ]
         });
     }
+    if($('#editor-full3').length) {
+        CKEDITOR.replace( 'editor-full3');
+    }
 
     $(".file-styled-primary").uniform({
         fileButtonClass: 'action btn bg-blue',

@@ -260,7 +260,53 @@ $(window).scroll(function () {
     include('js/jquery.rd-parallax.js');
 })(jQuery);
 
-jQuery(document).ready(function () {});
+jQuery(document).ready(function () {
+
+    var filter = jQuery('.filter'),
+        filterProducers = jQuery('.filter__producers'),
+        filterIndustries = jQuery('.filter__industries'),
+        projectsBox = jQuery('.project__box'),
+        filterValues = {
+        'industry': false,
+        'producer': false,
+        'getIndustry': function getIndustry(item) {
+            return this.industry ? jQuery(item).hasClass(this.industry) : true;
+        },
+        'getProducer': function getProducer(item) {
+            return this.producer ? jQuery(item).hasClass(this.producer) : true;
+        }
+    };
+
+    if (filter.length) {
+        filterProducers.on('click', 'li:nth-child(1)', function () {
+            return filterValues.producer = false;
+        });
+        filterIndustries.on('click', 'li:nth-child(1)', function () {
+            return filterValues.industry = false;
+        });
+        filter.on('click', 'li', function () {
+            var _this = jQuery(this),
+                filter = _this.attr("data-filter");
+
+            if (filter.indexOf('industry') !== -1) {
+                filterValues.industry = filter;
+            } else if (filter.indexOf('producer') !== -1) {
+                filterValues.producer = filter;
+            }
+
+            if (filter) {
+                projectsBox.find(">div").hide().fadeIn().filter(function () {
+                    var _this = jQuery(this);
+                    return !(filterValues.getIndustry(_this) && filterValues.getProducer(_this));
+                }).hide();
+            } else {
+                projectsBox.find(">div").fadeIn();
+            }
+
+            return _this.addClass('active').siblings('li').removeClass('active');
+        });
+    }
+});
 
 /***/ }),
 
