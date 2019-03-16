@@ -3,6 +3,15 @@
         @foreach($pages as $page)
             <li>
                 <a href="{{ route('page.show', ['alias' => $page->alias]) }}">{{ $page->name }}</a>
+                @if(strstr($page->text,'{projects}') && count($projects))
+                    <ul>
+                        @foreach($projects as $project)
+                            <li>
+                                <a href="{{ $project->url }}">{{ $project->name }}</a>
+                            </li>
+                        @endforeach
+                    </ul>
+                @endif
                 @if(strstr($page->text,'{articles}') && count($articles))
                     <ul>
                         @foreach($articles as $article)
@@ -24,4 +33,11 @@
             </li>
         @endforeach
     @endif
+        @if(count($producers))
+            @foreach($producers as $producer)
+                <li>
+                    <a href="{{ $producer->url }}">{{ $producer->name }}</a>
+                </li>
+            @endforeach
+        @endif
 </ul>

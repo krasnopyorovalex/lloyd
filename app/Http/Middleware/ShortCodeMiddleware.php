@@ -6,6 +6,8 @@ use App\Domain\Article\Queries\GetAllArticlesQuery;
 use App\Domain\Info\Queries\GetAllInfosQuery;
 use App\Domain\OurService\Queries\GetAllOurServicesQuery;
 use App\Domain\Page\Queries\GetAllPagesQuery;
+use App\Domain\Producer\Queries\GetAllProducersQuery;
+use App\Domain\Project\Queries\GetAllProjectsQuery;
 use App\Domain\Service\Queries\GetAllServicesQuery;
 use Closure;
 use Illuminate\Http\Response;
@@ -35,13 +37,17 @@ class ShortCodeMiddleware
             [
                 '#(<p(.*)>)?{sitemap}(<\/p>)?#' => function () {
                     $pages = $this->dispatch(new GetAllPagesQuery());
-                    $articles = $this->dispatch(new GetAllArticlesQuery(true));
-                    $news = $this->dispatch(new GetAllInfosQuery(true));
+                    $producers = $this->dispatch(new GetAllProducersQuery());
+                    $projects = $this->dispatch(new GetAllProjectsQuery());
+                    //$articles = $this->dispatch(new GetAllArticlesQuery(true));
+                    //$news = $this->dispatch(new GetAllInfosQuery(true));
 
                     return view('layouts.shortcodes.sitemap', [
                         'pages' => $pages,
-                        'articles' => $articles,
-                        'news' => $news
+                        'producers' => $producers,
+                        'projects' => $projects,
+                        //'articles' => $articles,
+                        //'news' => $news
                     ]);
                 }
             ],
