@@ -1,5 +1,5 @@
 function include(scriptUrl) {
-    document.write('<script src="' + scriptUrl + '"></script>');
+    document.write('<script src="' + window.location.origin + '/' + scriptUrl + '"></script>');
 }
 
 function isIE() {
