@@ -233,22 +233,6 @@
     .row .col-sm-6 + * {
         margin-top: 30px
     }
-    .row .col-sm-6 {
-        margin-top: 30px;
-        margin-bottom: 30px
-    }
-    .col-4_mod div:nth-child(n+3) {
-        margin-top: 158px
-    }
-    .col-4_mod div:nth-child(2n+3) {
-        clear: both
-    }
-    .col-3_mod div:nth-child(n+3) {
-        margin-top: 158px
-    }
-    .col-3_mod div:nth-child(2n+3) {
-        clear: both
-    }
     section.sect-404 em {
         font-size: 140px
     }
@@ -422,6 +406,21 @@
     }
     footer .contacts {
         text-align: center;
+    }
+    .header__menu {
+        padding: 0;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 10px;
+    }
+    .well {
+        padding: 2em 0;
+    }
+    .projects__in-main .thumb img {
+        height: auto;
+    }
+    .project figure img {
+        min-height: auto;
     }
 }
 @media screen and (max-width:767px) {
