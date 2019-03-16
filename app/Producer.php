@@ -13,7 +13,28 @@ class Producer extends Model
     /**
      * @var array
      */
-    protected $fillable = ['name', 'title', 'description', 'text', 'about', 'preview', 'alias'];
+    protected $fillable = [
+        'name',
+        'title',
+        'description',
+        'text',
+        'about',
+        'preview',
+        'alias'
+    ];
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function tabs()
+    {
+        return $this->belongsToMany(
+            Tab::class,
+            'producer_tabs',
+            'producer_id',
+            'tab_id'
+        );
+    }
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\MorphOne

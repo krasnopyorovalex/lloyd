@@ -22,6 +22,7 @@
                     <ul class="nav nav-tabs">
                         <li class="active"><a href="#main" data-toggle="tab">Основное</a></li>
                         <li><a href="#image" data-toggle="tab">Изображение</a></li>
+                        <li><a href="#tab" data-toggle="tab">Продукция</a></li>
                     </ul>
 
                     <div class="tab-content">
@@ -82,6 +83,27 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="tab-pane" id="tab">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="tabs">Прикрепить продукцию</label>
+                                        <select class="form-control border-blue border-xs select-search" multiple="multiple" id="tabs" name="tabs[]" data-width="100%">
+                                            @foreach($tabs as $tab)
+                                                <option value="{{ $tab->id }}" {{ in_array($tab->id, $relatedTabs) ? 'selected' : '' }}>{{ $tab->name }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    @submit_btn()
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </form>

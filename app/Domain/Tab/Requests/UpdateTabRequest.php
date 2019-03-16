@@ -3,18 +3,22 @@
 namespace Domain\Tab\Requests;
 
 use App\Http\Requests\Request;
-use Illuminate\Validation\Rule;
 
 /**
  * Class UpdateTabRequest
+ *
  * @package Domain\Tab\Requests
  */
 class UpdateTabRequest extends Request
 {
+    /**
+     * @return array
+     */
     public function rules(): array
     {
         return [
-            'name' => 'bail|required|max:255'
+            'name' => 'bail|required|max:255',
+            'text' => 'string|nullable'
         ];
     }
 

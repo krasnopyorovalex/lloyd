@@ -24,6 +24,16 @@
 
                 @imageInput(['name' => 'image', 'type' => 'file', 'label' => 'Выберите изображение на компьютере'])
                 @imageInput(['name' => 'icon', 'type' => 'file', 'label' => 'Иконка поставщика'])
+
+                <div class="form-group">
+                    <label for="tabs">Прикрепить продукцию</label>
+                    <select class="form-control border-blue border-xs select-search" multiple="multiple" id="tabs" name="tabs[]" data-width="100%">
+                        @foreach($tabs as $tab)
+                            <option value="{{ $tab->id }}">{{ $tab->name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+
                 @textarea(['name' => 'preview', 'label' => 'Превью для главной', 'id' => 'editor-full2'])
                 @textarea(['name' => 'about', 'label' => 'Текст для вкладки - О поставщике', 'id' => 'editor-full3'])
                 @textarea(['name' => 'text', 'label' => 'Текст'])

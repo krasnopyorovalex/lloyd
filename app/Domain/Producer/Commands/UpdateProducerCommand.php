@@ -53,11 +53,16 @@ class UpdateProducerCommand
             $producer->icon = \Storage::url($icon);
         }
 
+        $producer->tabs()->sync($this->request->post('tabs'));
+
         if ($this->request->has('image')) {
             if ($producer->image) {
                 $this->dispatch(new DeleteImageCommand($producer->image));
             }
-            $this->dispatch(new UploadImageCommand($this->request, $producer->id, Producer::class));
+            $this->dispatch(new UploadImageCommand(
+                $this->request, $producer->id,
+                Producer::class
+            ));
         }
 
         return $producer->update($this->request->all());

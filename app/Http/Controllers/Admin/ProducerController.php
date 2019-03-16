@@ -7,6 +7,7 @@ use App\Domain\Producer\Commands\DeleteProducerCommand;
 use App\Domain\Producer\Commands\UpdateProducerCommand;
 use App\Domain\Producer\Queries\GetAllProducersQuery;
 use App\Domain\Producer\Queries\GetProducerByIdQuery;
+use App\Domain\Tab\Queries\GetAllTabsQuery;
 use App\Http\Controllers\Controller;
 use Domain\Producer\Requests\CreateProducerRequest;
 use Domain\Producer\Requests\UpdateProducerRequest;
@@ -38,7 +39,11 @@ class ProducerController extends Controller
      */
     public function create()
     {
-        return view('admin.producers.create');
+        $tabs = $this->dispatch(new GetAllTabsQuery());
+
+        return view('admin.producers.create', [
+            'tabs' => $tabs
+        ]);
     }
 
     /**
@@ -63,9 +68,14 @@ class ProducerController extends Controller
     public function edit($id)
     {
         $producer = $this->dispatch(new GetProducerByIdQuery($id));
+        $tabs = $this->dispatch(new GetAllTabsQuery());
+
+        $relatedTabs = get_ids_from_array($producer->tabs->toArray());
 
         return view('admin.producers.edit', [
-            'producer' => $producer
+            'producer' => $producer,
+            'tabs' => $tabs,
+            'relatedTabs' => $relatedTabs
         ]);
     }
 

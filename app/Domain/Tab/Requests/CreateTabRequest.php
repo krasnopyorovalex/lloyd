@@ -13,7 +13,8 @@ class CreateTabRequest extends Request
     public function rules(): array
     {
         return [
-            'name' => 'bail|required|max:255'
+            'name' => 'bail|required|max:255',
+            'text' => 'string|nullable'
         ];
     }
 

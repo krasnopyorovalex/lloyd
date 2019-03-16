@@ -41,6 +41,8 @@ class CreateProducerCommand
 
         $producer->save();
 
+        $producer->tabs()->attach($this->request->post('tabs'));
+
         if ($this->request->has('image')) {
             return $this->dispatch(new UploadImageCommand($this->request, $producer->id, Producer::class));
         }

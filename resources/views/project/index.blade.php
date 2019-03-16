@@ -20,7 +20,7 @@
                 <ul class="breadcrumbs">
                     <li><a href="{{ route('page.show') }}">Главная</a></li>
                     <li><a href="{{ route('page.show', ['alias' => 'projects']) }}">Проекты</a></li>
-                    <li>{{ $project->name }} {{ request()->path() }}</li>
+                    <li>{{ $project->name }}</li>
                 </ul>
             </div>
         </div>
