@@ -25,7 +25,7 @@
                         </a>
                     @endif
 
-                    <p class="big">{{ strip_tags($producer->preview) }}</p>
+                    <p class="big">{!! strip_tags($producer->preview) !!}</p>
                     <a class="btn1" href="{{ $producer->url }}">Подробнее >></a>
                 </div>
             @endforeach
