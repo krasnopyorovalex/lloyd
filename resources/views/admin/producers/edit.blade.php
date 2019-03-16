@@ -52,7 +52,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     @if ($producer->icon)
-                                        <div class="panel panel-flat border-blue border-xs" id="image__box">
+                                        <div class="panel panel-flat border-blue border-xs">
                                             <div class="panel-body">
                                                 <img src="{{ asset($producer->icon) }}" class="upload__image">
                                             </div>
