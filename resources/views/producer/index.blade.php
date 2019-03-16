@@ -14,6 +14,17 @@
 
 @section('content')
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumbs">
+                    <li><a href="{{ route('page.show') }}">Главная</a></li>
+                    <li>{{ $producer->name }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <main>
         <section class="well2 bg-light page__content">
             <div class="container">
