@@ -410,6 +410,19 @@
         float: none;
         width: auto
     }
+    .footer__menu {
+        margin: 1em auto 0 auto;
+        text-align: center;
+    }
+    footer .develop, .copyright {
+        text-align: center;
+    }
+    footer .develop {
+        margin: 1em 0 0 0;
+    }
+    footer .contacts {
+        text-align: center;
+    }
 }
 @media screen and (max-width:767px) {
     .table-responsive {
