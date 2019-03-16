@@ -15,7 +15,7 @@
 @section('content')
 
     <main>
-        <section class="well2 bg-light">
+        <section class="well2 bg-light page__content">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
@@ -30,8 +30,42 @@
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div class="tab-pane active" id="about">{!! $producer->about !!}</div>
-                            <div class="tab-pane" id="projects">Profile Tab.</div>
-                            <div class="tab-pane" id="production">Messages Tab.</div>
+                            <div class="tab-pane" id="projects">
+                                <div class="row project__box">
+                                    @if(count($producer->projects))
+                                    @foreach($producer->projects as $project)
+                                        <div class="col-md-4">
+                                            <div class="project">
+                                                @if($project->image)
+                                                    <figure>
+                                                        <img src="{{ asset($project->image->path) }}" alt="{{ $project->image->alt }}" title="{{ $project->image->title }}">
+                                                    </figure>
+                                                @endif
+                                                <div class="desc">
+                                                    <div class="name">
+                                                        <a href="{{ $project->url }}">{{ $project->name }}</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="production">
+                                @if(count($producer->tabs))
+                                <ul class="faq">
+                                    @foreach($producer->tabs as $tab)
+                                        <li>
+                                            <div class="q">{{ $tab->name }}</div>
+                                            <div class="a">
+                                                {!! $tab->text !!}
+                                            </div>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                                @endif
+                            </div>
                         </div>
                     </div>
                 </div>

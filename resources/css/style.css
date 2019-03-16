@@ -260,3 +260,64 @@ footer .copyright {
     left: 15%;
     height: 1px;
 }
+.page__content .faq, .page__content .nav {
+    margin: 0;
+    padding: 0;
+}
+.faq>li {
+    display:block;
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow:hidden
+}
+.faq>li+li {
+    margin-top:1em
+}
+.faq>li .q {
+    background-color:#d1d2d4;
+    padding:10px 15px 10px 40px;
+    position:relative;
+    font-size:14px;
+    color: #2d3a41;
+}
+.faq>li .q:after,
+.faq>li .q:before {
+    -webkit-transition:.5s cubic-bezier(.18,.89,.32,1.28);
+    transition:.5s cubic-bezier(.18,.89,.32,1.28);
+    position:absolute;
+    display:block;
+    bottom:0;
+    top:0;
+    left:10px;
+    content:"";
+    background-color:#ef4023;
+    margin:auto;
+    font-size:1.875rem
+}
+.faq>li .q:after {
+    width:3px;
+    height:15px;
+    left:16px
+}
+.faq>li .q:before {
+    width:15px;
+    height:3px
+}
+.faq>li .q:hover {
+    cursor:pointer
+}
+.faq>li .a {
+    margin:1em 0;
+    display:none
+}
+.faq>li .a, .faq>li .a p {
+    font-size: 14px
+}
+.faq>li.active .q:after {
+    -webkit-transform:translate3d(0,-70px,0);
+    transform:translate3d(0,-70px,0)
+}
+.tab-pane .project figure img {
+    min-height: 200px;
+}

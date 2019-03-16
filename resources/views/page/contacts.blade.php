@@ -13,36 +13,30 @@
 @endpush
 
 @section('content')
-    @includeWhen($page->slider, 'layouts.sections.slider', ['slider' => $page->slider])
 
-    <section class="breadcrumbs">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>{{ $page->name }}</h1>
-                    <ul>
-                        <li><a href="{{ route('page.show') }}">Главная</a></li>
-                        <li>{{ $page->name }}</li>
-                    </ul>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumbs">
+                    <li><a href="{{ route('page.show') }}">Главная</a></li>
+                    <li>{{ $page->name }}</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
 
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 flex-start">
-                    <div class="content page__content">
+        <section class="well2 bg-light page__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>{{ $page->name }}</h1>
                         {!! $page->text !!}
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
-    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1d6df32506ddc0247f1349a1035b4f122379f2f5fb9e88723e28d636d741025&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
-
-    @includeWhen($page->gallery, 'layouts.sections.gallery', ['gallery' => $page->gallery])
-
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3b147f7596759db090962a344a4e0d09b2d2648ebf77a135e5f3c01a640def33&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
 @endsection

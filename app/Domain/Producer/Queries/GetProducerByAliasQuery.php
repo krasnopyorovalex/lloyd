@@ -29,6 +29,6 @@ class GetProducerByAliasQuery
      */
     public function handle()
     {
-        return Producer::where('alias', $this->alias)->firstOrFail();
+        return Producer::where('alias', $this->alias)->with(['tabs'])->firstOrFail();
     }
 }

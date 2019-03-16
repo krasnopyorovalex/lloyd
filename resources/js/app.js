@@ -237,4 +237,18 @@ jQuery(document).ready(function() {
         });
     }
 
+    var mainSection = jQuery("main"),
+        faq = mainSection.find(".faq");
+    if(faq.length) {
+        faq.on("click", "li .q", function () {
+            var _this = jQuery(this),
+                parent = _this.parent("li");
+            faq.find(".a").hide();
+            if(parent.hasClass("active")) {
+                return faq.find("li").removeClass("active");
+            }
+            return faq.find("li").removeClass("active") && _this.next(".a").fadeIn("slow") && parent.addClass("active");
+        });
+    }
+
 });
