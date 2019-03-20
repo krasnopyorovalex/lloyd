@@ -153,7 +153,8 @@ footer .copyright {
     top: 0;
 }
 .page__content h1 {
-    font-size: 32px
+    font-size: 32px;
+    text-align: center;
 }
 .page__content p {
     text-align: justify;
@@ -320,4 +321,17 @@ footer .copyright {
 }
 .tab-pane .project figure img {
     min-height: 200px;
+}
+.producers .big {
+    text-align: justify;
+    font-size: 15px;
+}
+.producers .big + .btn1 {
+    margin-top: 10px;
+}
+.not__found {
+    text-align: center;
+}
+.not__found img {
+    max-width: 400px;
 }

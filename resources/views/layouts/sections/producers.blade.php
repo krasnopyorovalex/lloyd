@@ -1,4 +1,4 @@
-<section class="well bg-light border">
+<section class="well bg-light border producers">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

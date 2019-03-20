@@ -6,18 +6,19 @@
 
 @section('content')
 
-    <section class="not__found">
-        <div class="bg__box"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <div class="not__found-box">
-                        <img src="{{ asset('img/error.svg') }}" alt="страница не найдена">
+    <main>
+        <section class="well2 bg-light not__found">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="not__found-box">
+                            <img src="{{ asset('images/error.svg') }}" alt="страница не найдена">
+                        </div>
+                        <a href="{{ route('page.show') }}" class="btn">Перейти на главную</a>
                     </div>
-                    <a href="{{ route('page.show') }}" class="btn">Перейти на главную</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
 @endsection

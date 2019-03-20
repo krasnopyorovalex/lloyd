@@ -6474,8 +6474,8 @@ article + article {
   margin-top: 0
 }
 .custom-wrapper .custom-box {
-  padding-top: 60px;
-  padding-bottom: 63px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   background: url(../images/page-1_img07.png) left top no-repeat;
   width: 69%
 }
@@ -9726,8 +9726,8 @@ a.list-group-item-danger.active:hover {
   padding-bottom: 75%
 }
 .well {
-  padding-top: 84px;
-  padding-bottom: 87px
+  padding-top: 2em;
+  padding-bottom: 2em
 }
 .well2 {
   padding-top: 97px;
