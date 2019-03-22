@@ -5,7 +5,7 @@
             <ul>
                 <li data-filter="all" class="active"><span>Все</span></li>
                 @foreach($producers as $producer)
-                    <li data-filter="producer__{{ $producer->id }}"><span>{{ $producer->name }}</span></li>
+                    <li data-filter="producer__{{ $producer->id }}"><span>{{ $producer->name_little }}</span></li>
                 @endforeach
             </ul>
         </div>

@@ -12,7 +12,7 @@
                         @if($producer->icon)
                             <div class="box_aside">
                                 <a href="{{ $producer->url }}">
-                                    <img src="{{ asset($producer->icon) }}" alt="{{ $producer->name_little }}"/>
+                                    <img src="{{ asset($producer->icon) }}" alt="{{ $producer->name }}"/>
                                 </a>
                             </div>
                         @endif
