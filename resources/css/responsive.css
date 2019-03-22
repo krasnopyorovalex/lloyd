@@ -487,6 +487,10 @@
         height: 68px;
         width: 68px
     }
+    .tab-content img {
+        float: none;
+        margin: 0;
+    }
     footer .inline-list li + li {
         margin-left: 22px
     }

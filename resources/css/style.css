@@ -370,3 +370,7 @@ footer .copyright {
     font-size: 28px;
     line-height: normal;
 }
+.tab-content img {
+    float: left;
+    margin:  0 5px 0 0;
+}
