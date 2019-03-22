@@ -11,7 +11,9 @@
                     <div class="box">
                         @if($producer->icon)
                             <div class="box_aside">
-                                <img src="{{ asset($producer->icon) }}" alt="{{ $producer->name }}"/>
+                                <a href="{{ $producer->url }}">
+                                    <img src="{{ asset($producer->icon) }}" alt="{{ $producer->name }}"/>
+                                </a>
                             </div>
                         @endif
                         <div class="box_cnt box_cnt__no-flow">

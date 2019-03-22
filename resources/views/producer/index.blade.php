@@ -19,7 +19,7 @@
             <div class="col-md-12">
                 <ul class="breadcrumbs">
                     <li><a href="{{ route('page.show') }}">Главная</a></li>
-                    <li>{{ $producer->name }}</li>
+                    <li>{{ $producer->name_little }}</li>
                 </ul>
             </div>
         </div>
@@ -29,11 +29,16 @@
         <section class="well2 bg-light page__content">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="producer__name">{{ $producer->name }}</h1>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-md-3">
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs tabs-left">
                             <li class="active"><a href="#about" data-toggle="tab">О поставщике</a></li>
-                            <li><a href="#projects" data-toggle="tab">Проекты поставщика</a></li>
+                            <li><a href="#projects" data-toggle="tab">Наши проекты</a></li>
                             <li><a href="#production" data-toggle="tab">Продукция</a></li>
                         </ul>
                     </div>

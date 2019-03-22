@@ -18,6 +18,7 @@
                 @csrf
 
                 @input(['name' => 'name', 'label' => 'Название'])
+                @input(['name' => 'name_little', 'label' => 'Короткое название бренда'])
                 @input(['name' => 'title', 'label' => 'Title'])
                 @input(['name' => 'description', 'label' => 'Description'])
                 @input(['name' => 'alias', 'label' => 'Alias'])

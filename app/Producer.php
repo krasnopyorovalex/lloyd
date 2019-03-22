@@ -15,6 +15,7 @@ class Producer extends Model
      */
     protected $fillable = [
         'name',
+        'name_little',
         'title',
         'description',
         'text',

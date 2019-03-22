@@ -36,7 +36,7 @@
         @if(count($producers))
             @foreach($producers as $producer)
                 <li>
-                    <a href="{{ $producer->url }}">{{ $producer->name }}</a>
+                    <a href="{{ $producer->url }}">{{ $producer->name_little }}</a>
                 </li>
             @endforeach
         @endif

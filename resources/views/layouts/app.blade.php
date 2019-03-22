@@ -99,6 +99,10 @@
         </footer>
     </div>
 
+    <button class="scroll-top">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </button>
+
     <script src="{{ asset('js/jquery-2.2.4.min.js') }}"></script>
     <script src="{{ asset('js/jquery-migrate-1.2.1.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>

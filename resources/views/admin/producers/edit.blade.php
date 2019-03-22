@@ -31,6 +31,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     @input(['name' => 'name', 'label' => 'Название', 'entity' => $producer])
+                                    @input(['name' => 'name_little', 'label' => 'Короткое название бренда', 'entity' => $producer])
                                     @input(['name' => 'title', 'label' => 'Title', 'entity' => $producer])
                                     @input(['name' => 'description', 'label' => 'Description', 'entity' => $producer])
 

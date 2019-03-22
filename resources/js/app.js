@@ -251,4 +251,23 @@ jQuery(document).ready(function() {
         });
     }
 
+    var scrollTop = $ (".scroll-top");
+    if (scrollTop.length) {
+
+        //Check to see if the window is top if not then display button
+        $(window).on('scroll', function (){
+            if ($(this).scrollTop() > 200) {
+                scrollTop.fadeIn();
+            } else {
+                scrollTop.fadeOut();
+            }
+        });
+
+        //Click event to scroll to top
+        scrollTop.on('click', function() {
+            $('html, body').animate({scrollTop : 0},1500);
+            return false;
+        });
+    }
+
 });
