@@ -6572,7 +6572,8 @@ article + article {
   padding: 15px 0 0 23px
 }
 .box_cnt__no-flow {
-  overflow: hidden
+  overflow: hidden;
+  text-align: center;
 }
 .box2_cnt {
   padding: 31px 25px 33px 21px;
