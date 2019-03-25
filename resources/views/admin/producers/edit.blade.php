@@ -44,6 +44,8 @@
                                     @textarea(['name' => 'preview', 'label' => 'Превью для главной', 'id' => 'editor-full2', 'entity' => $producer])
                                     @textarea(['name' => 'about', 'label' => 'Текст для вкладки - О поставщике', 'id' => 'editor-full3', 'entity' => $producer])
                                     @textarea(['name' => 'text', 'label' => 'Текст', 'entity' => $producer])
+
+                                    @input(['name' => 'pos', 'label' => 'Позиция', 'entity' => $producer])
                                     @submit_btn()
                                 </div>
                             </div>

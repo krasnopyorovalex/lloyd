@@ -17,7 +17,7 @@ class GetAllProducersQuery
     public function handle()
     {
         if (! self::$producers) {
-            self::$producers = Producer::with(['image'])->get();
+            self::$producers = Producer::with(['image'])->orderBy('pos')->get();
         }
 
         return self::$producers;

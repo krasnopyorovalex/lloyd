@@ -22,7 +22,8 @@ class CreateProducerRequest extends Request
             'about' => 'string|nullable',
             'preview' => 'string|nullable',
             'image' => 'image',
-            'icon' => 'image'
+            'icon' => 'image',
+            'pos' => 'integer|min:0|max:255'
         ];
     }
 

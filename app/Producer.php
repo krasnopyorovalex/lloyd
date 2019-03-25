@@ -21,7 +21,8 @@ class Producer extends Model
         'text',
         'about',
         'preview',
-        'alias'
+        'alias',
+        'pos'
     ];
 
     /**

@@ -39,6 +39,8 @@
                 @textarea(['name' => 'about', 'label' => 'Текст для вкладки - О поставщике', 'id' => 'editor-full3'])
                 @textarea(['name' => 'text', 'label' => 'Текст'])
 
+                @input(['name' => 'pos', 'label' => 'Позиция'])
+
                 @submit_btn()
             </form>
 

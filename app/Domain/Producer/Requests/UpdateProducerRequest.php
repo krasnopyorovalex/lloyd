@@ -25,6 +25,7 @@ class UpdateProducerRequest extends Request
             'imageAlt' => 'string|max:255',
             'imageTitle' => 'string|max:255',
             'icon' => 'image',
+            'pos' => 'integer|min:0|max:255',
             'alias' => [
                 'required',
                 'max:64',
