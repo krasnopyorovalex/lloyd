@@ -481,6 +481,9 @@
     }
 }
 @media (max-width:479px) {
+    .producers .box {
+        min-height: auto;
+    }
     footer .inline-list li a {
         line-height: 68px;
         text-align: center;

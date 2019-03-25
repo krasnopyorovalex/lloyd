@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-primary text-center">Поставщики</h2>
+                <h2 class="text-primary text-center">Торговые марки</h2>
             </div>
         </div>
         <div class="row">
