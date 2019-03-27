@@ -17,7 +17,7 @@
                             </div>
                         @endif
                         <div class="box_cnt box_cnt__no-flow">
-                            <h5 class="strong">{{ $producer->name }}</h5>
+                            <h5 class="strong">{!! $producer->name !!}</h5>
                         </div>
                     </div>
                     @if($producer->image)
