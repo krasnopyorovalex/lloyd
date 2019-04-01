@@ -1,3 +1,2 @@
 User-agent: *
-Host: https://bikor-tech.ru
-Sitemap: https://bikor-tech.ru/sitemap.xml
+Disallow: /
