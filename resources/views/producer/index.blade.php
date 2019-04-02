@@ -37,7 +37,7 @@
                     <div class="col-md-3">
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs tabs-left">
-                            <li class="active"><a href="#about" data-toggle="tab">О поставщике</a></li>
+                            <li class="active"><a href="#about" data-toggle="tab">О торговой марке</a></li>
                             <li><a href="#projects" data-toggle="tab">Наши проекты</a></li>
                             <li><a href="#production" data-toggle="tab">Продукция</a></li>
                         </ul>
