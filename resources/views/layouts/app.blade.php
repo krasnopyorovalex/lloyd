@@ -25,7 +25,7 @@
                         <div class="col-md-12">
                             <ul class="info-list">
                                 <li class="fa fa-phone"><a href="tel:+79789098254">+7 (978) 909 82 54</a></li>
-                                <li class="fa fa-envelope"><a href="mailto:ceo@russpeccoat.ru">ceo@russpeccoat.ru</a></li>
+                                <li class="fa fa-envelope"><a href="mailto:info@bikor-tech.ru">info@bikor-tech.ru</a></li>
                                 <li class="fa fa-map-marker">
                                     <address>г. Симферополь, ул. Балаклавская, 68</address>
                                 </li>
@@ -66,8 +66,7 @@
                             <li class="fa fa-map-marker">295048, Республика Крым, г. Симферополь, ул. Балаклавская, 68</li>
                             <li class="fa fa-phone"><a href="tel:+79789098254">+7 (978) 909 82 54</a></li>
                             <li class="fa fa-phone"><a href="tel:+79787092009">+7 (978) 709 20 09</a></li>
-                            <li class="fa fa-envelope"><a href="mailto:ceo@russpeccoat.ru">ceo@russpeccoat.ru</a></li>
-                            <li class="fa fa-envelope"><a href="mailto:info@russpeccoat.ru">info@russpeccoat.ru</a></li>
+                            <li class="fa fa-envelope"><a href="mailto:info@bikor-tech.ru">info@bikor-tech.ru</a></li>
                         </ul>
                     </div>
                     <div class="col-md-5 text-right">
