@@ -79,8 +79,8 @@
                                     </td>
                                     <td>
                                         <p>
-                                            <b><a href="mailto:ceo@russpeccoat.ru">ceo@russpeccoat.ru</a></b><br>
-                                            <b><a href="mailto:info@russpeccoat.ru">info@russpeccoat.ru</a></b></p>
+                                            <b><a href="mailto:info@bikor-tech.ru">info@bikor-tech.ru</a></b>
+                                        </p>
                                     </td>
                                 </tr>
                                 </tbody>
