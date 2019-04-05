@@ -158,6 +158,9 @@ footer .copyright {
 .page__content p {
     text-align: justify;
 }
+.page__content table tr td {
+    vertical-align: top;
+}
 .page__content ul, .page__content ol {
     padding: 0 0 0 1em;
     margin: 0 0 15px 1em;

@@ -77,7 +77,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="copyright">© Русспецкоут, {{ date('Y') }} г. | Все права защищены</div>
+                        <div class="copyright">© БИКОР-ТЕХНО, {{ date('Y') }} Г. | ВСЕ ПРАВА ЗАЩИЩЕНЫ</div>
                     </div>
                     <div class="col-md-6">
                         <div class="develop">
