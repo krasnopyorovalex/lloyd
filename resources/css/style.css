@@ -160,6 +160,7 @@ footer .copyright {
 }
 .page__content table tr td {
     vertical-align: top;
+    padding: 5px;
 }
 .page__content ul, .page__content ol {
     padding: 0 0 0 1em;
