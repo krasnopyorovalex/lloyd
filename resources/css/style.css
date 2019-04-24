@@ -378,11 +378,8 @@ footer .copyright {
     float: left;
     margin:  0 10px 0 0;
 }
-.tab-content p:has(img) {
-    display: block;
-    text-align: center;
-}
 .tab-content .img__block {
-    max-width: 320px;
+    max-width: 500px;
+    float: none;
     margin: 0 auto 1em;
 }
