@@ -480,6 +480,13 @@
         clear: both;
         width: 100%
     }
+    .small__img {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+    .small__img + .small__img {
+        margin: 0 0 15px 0;
+    }
 }
 @media (max-width:479px) {
     .producers .box {

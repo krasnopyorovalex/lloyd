@@ -33,6 +33,18 @@
                     <div class="col-md-12">
                         <h1>{{ $project->name }}</h1>
                         {!! $project->text !!}
+                        <div class="box__image">
+                            <p>
+                                <img src="{{ asset('images/tube6.JPG') }}" class="big__img" alt="">
+                            </p>
+                            <p>
+                                <img src="{{ asset('images/tube3.JPG') }}" class="small__img" alt="">
+                                <img src="{{ asset('images/tube2.JPG') }}" class="small__img" alt="">
+                            </p>
+                            <p>
+                                <img src="{{ asset('images/tube4.jpg') }}" class="big__img" alt="">
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

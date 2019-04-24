@@ -378,9 +378,26 @@ footer .copyright {
     float: left;
     margin:  0 10px 0 0;
 }
-.tab-content .img__block {
+.tab-content .img__block, .img__block {
     max-width: 500px;
     float: none;
-    margin: 0 auto 1em;
+    margin: 0 auto 15px;
     width: 100%;
+}
+.small__img + .small__img {
+    margin-left: 10px;
+}
+.small__img {
+    width: calc(50% - 7px);
+    float: none;
+    max-height: 300px;
+}
+.big__img {
+    float: none;
+    width: 100%;
+}
+.box__image {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 920px;
 }
