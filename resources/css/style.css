@@ -382,3 +382,7 @@ footer .copyright {
     display: block;
     text-align: center;
 }
+.img__block {
+    max-width: 320px;
+    margin: 0 auto 1em;
+}
