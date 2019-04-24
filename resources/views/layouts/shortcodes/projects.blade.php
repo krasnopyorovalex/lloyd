@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="filter filter__producers">
-            <div class="title">Поставщики:</div>
+            <div class="title">Торговые марки:</div>
             <ul>
                 <li data-filter="all" class="active"><span>Все</span></li>
                 @foreach($producers as $producer)
