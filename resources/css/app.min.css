@@ -5262,15 +5262,12 @@ th {
 .rd-mobilepanel_title {
   position: fixed;
   padding-left: 10px;
-  top: 4px;
+  top: 8px;
   left: 56px;
   right: 56px;
   color: #000;
   font-size: 24px;
-  line-height: 48px;
-  letter-spacing: 1.2px;
-  text-overflow: ellipsis;
-  white-space: nowrap
+  line-height: normal;
 }
 .rd-mobilepanel_title small {
   display: none
