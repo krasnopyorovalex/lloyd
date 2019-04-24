@@ -8,7 +8,7 @@
     <meta property="og:url" content="{{ request()->getUri() }}">
     <meta property="og:image" content="{{ asset($producer->image ? $producer->image->path : 'img/logo.png') }}">
     <meta property="og:description" content="{{ $producer->description }}">
-    <meta property="og:site_name" content="Специализированная лакокрасочная компания Русспецкоут">
+    <meta property="og:site_name" content="Специализированная лакокрасочная компания - Бикор Техно">
     <meta property="og:locale" content="ru_RU">
 @endpush
 
