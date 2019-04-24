@@ -388,7 +388,7 @@ footer .copyright {
     margin-left: 10px;
 }
 .small__img {
-    width: calc(50% - 7px);
+    width: calc(50% - 5px);
     float: none;
     max-height: 300px;
 }
