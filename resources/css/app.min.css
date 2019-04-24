@@ -5260,22 +5260,18 @@ th {
   z-index: 99999991
 }
 .rd-mobilepanel_title {
-  position: fixed;
-  padding-left: 10px;
-  top: 8px;
-  left: 56px;
-  right: 56px;
   color: #000;
   font-size: 24px;
   line-height: normal;
+  margin: 0;
 }
 .rd-mobilepanel_title small {
   display: none
 }
 .rd-mobilepanel_toggle {
-  position: fixed;
-  top: 4px;
-  left: 8px;
+  /*position: fixed;*/
+  /*top: 4px;*/
+  /*left: 8px;*/
   width: 48px;
   height: 48px;
   background-color: #f7f7f7;

@@ -280,7 +280,8 @@
     }
     .rd-mobilemenu,
     .rd-mobilepanel {
-        display: block
+        display: flex;
+        align-items: center;
     }
     div#panel .navbar-header .navbar-toggle .icon-bar {
         background-color: #000
