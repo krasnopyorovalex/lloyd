@@ -10345,7 +10345,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin-right: 2px;
   line-height: 1.92857143;
   border: 1px solid transparent;
-  border-radius: 0
+  border-radius: 0;
+  color: #2d3a41;
 }
 .nav-tabs > li > a:hover {
   border-color: #bababa #bababa #ddd

@@ -339,6 +339,13 @@ jQuery(document).ready(function () {
             return false;
         });
     }
+
+    var prevPage = jQuery(".previous__page");
+    if (prevPage.length) {
+        prevPage.on("click", function () {
+            return window.history.back();
+        });
+    }
 });
 
 /***/ }),
