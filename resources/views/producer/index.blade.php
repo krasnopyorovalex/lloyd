@@ -30,6 +30,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
+                        @include('layouts.partials.arrow_back')
                         <h1 class="producer__name">{{ $producer->name }}</h1>
                     </div>
                 </div>

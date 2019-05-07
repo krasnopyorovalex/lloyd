@@ -19,6 +19,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                    @include('layouts.partials.arrow_back')
                     <h1>{{ $article->name }}</h1>
                     <ul>
                         <li><a href="{{ route('page.show') }}">Главная</a></li>

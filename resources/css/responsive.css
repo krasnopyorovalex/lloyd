@@ -489,6 +489,9 @@
     }
 }
 @media (max-width:479px) {
+    .previous__page {
+        display: none;
+    }
     .producers .box {
         min-height: auto;
     }

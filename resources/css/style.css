@@ -151,12 +151,21 @@ footer .copyright {
     left: -10px;
     top: 0;
 }
+.page__content {
+    position: relative;
+}
 .page__content h1 {
     font-size: 32px;
     text-align: center;
 }
 .page__content p {
     text-align: justify;
+}
+.page__content a {
+    color: #ef4023;
+}
+.page__content a:hover {
+    text-decoration: underline;
 }
 .page__content table tr td {
     vertical-align: top;
@@ -342,7 +351,7 @@ footer .copyright {
 .page__content .producer__name {
     margin-bottom: 0;
 }
-.scroll-top {
+.scroll-top, .previous__page {
     width: 40px;
     height: 40px;
     position: fixed;
@@ -358,7 +367,13 @@ footer .copyright {
     box-shadow: none;
     padding: 0;
 }
-.scroll-top::after {
+.previous__page {
+    bottom: unset;
+    right: unset;
+    left: 0.5em;
+    display: block;
+}
+.scroll-top:after, .previous__page:after {
     position: absolute;
     z-index: -1;
     content: '';
@@ -369,10 +384,14 @@ footer .copyright {
     opacity: 1;
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
 }
-.scroll-top .fa {
+.scroll-top .fa, .previous__page .fa {
     display: inline-block;
     font-size: 28px;
     line-height: normal;
+}
+.previous__page .fa {
+    color: #ffffff;
+    line-height: 40px;
 }
 .tab-content img {
     float: left;
@@ -400,4 +419,9 @@ footer .copyright {
     text-align: center;
     margin: 0 auto;
     max-width: 920px;
+}
+.stuck_container {
+    background-image: url("../images/main_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
