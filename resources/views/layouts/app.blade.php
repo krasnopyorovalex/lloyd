@@ -6,7 +6,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>@yield('title', '- Бикор Техно - специализированная лакокрасочная компания')</title>
     <meta name="description" content="@yield('description', '')">
-    <meta name="robots" content="noindex, nofollow" />
     <meta name="google" content="notranslate">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="theme-color" content="#eee">
