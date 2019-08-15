@@ -6,7 +6,7 @@
     <meta property="og:title" content="{{ $new->title }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ request()->getUri() }}">
-    <meta property="og:image" content="{{ asset($new->image ? $new->image->path : 'img/logo.png') }}">
+    <meta property="og:image" content="{{ asset($new->image ? $new->image->path : 'images/logo.png') }}">
     <meta property="og:description" content="{{ $new->description }}">
     <meta property="og:site_name" content="Специализированная лакокрасочная компания - Бикор Техно">
     <meta property="og:locale" content="ru_RU">
