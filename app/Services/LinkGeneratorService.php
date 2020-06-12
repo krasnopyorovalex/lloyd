@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Catalog;
 use Illuminate\Support\Str;
 
 /**
@@ -15,9 +16,10 @@ class LinkGeneratorService
      */
     private $models = [
         'App\Page' => 'Страницы',
-        'App\Producer' => 'Поставщики',
+//        'App\Producer' => 'Поставщики',
+        Catalog::class => 'Каталог',
         //'App\Service' => 'Номера',
-        //'App\Article' => 'Статьи',
+        'App\Article' => 'Статьи',
         //'App\Info' => 'Новости'
     ];
 

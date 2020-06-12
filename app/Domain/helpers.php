@@ -100,7 +100,7 @@ if (! function_exists('add_css_class')) {
         if (count($item->menuItems)) {
             array_push($classes, 'dropdown');
         }
-        if (trim($item->link,'/') == request()->path() || request()->path() == $item->link || ($item->link != '/' && strstr(request()->path(),trim($item->link,'/')))) {
+        if (trim($item->link,'/') == request()->path() || request()->path() == $item->link) {
             array_push($classes, 'active');
         }
         return count($classes) ? ' class="'. implode(' ', $classes) .'"' : '';

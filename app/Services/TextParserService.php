@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Domain\Article\Queries\GetAllArticlesQuery;
+use App\Domain\Catalog\Queries\GetAllCatalogsQuery;
 use App\Domain\Industry\Queries\GetAllIndustriesQuery;
 use App\Domain\Info\Queries\GetAllInfosQuery;
 use App\Domain\Producer\Queries\GetAllProducersQuery;
@@ -32,6 +33,11 @@ class TextParserService
                     $articles = $this->dispatch(new GetAllArticlesQuery(true, self::PAGINATE_LIMIT));
 
                     return view('layouts.shortcodes.articles', ['articles' => $articles]);
+                },
+                '#(<p(.*)>)?{catalog}(</p>)?#' => function () use ($entity) {
+                    $catalog = $this->dispatch(new GetAllCatalogsQuery());
+
+                    return view('layouts.shortcodes.catalog', ['catalog' => $catalog]);
                 },
                 '#(<p(.*)>)?{news}(<\/p>)?#' => function () use ($entity) {
                     $news = $this->dispatch(new GetAllInfosQuery(true, self::PAGINATE_LIMIT));

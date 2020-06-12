@@ -13,14 +13,11 @@
 @endpush
 
 @section('content')
-    @includeWhen($article->slider, 'layouts.sections.slider', ['slider' => $article->slider])
 
     <section class="breadcrumbs">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    @include('layouts.partials.arrow_back')
-                    <h1>{{ $article->name }}</h1>
                     <ul>
                         <li><a href="{{ route('page.show') }}">Главная</a></li>
                         <li><a href="{{ route('page.show',['alias' => 'articles']) }}">Статьи</a></li>
@@ -34,22 +31,19 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-9 flex-start">
+                <div class="col-12 flex-start">
                     <div class="content page__content">
+                        <h1>{{ $article->name }}</h1>
+                        <time itemprop="datePublished" datetime="{{ $article->published_at->format('c') }}" class="article-date">
+                            {{ $article->published_at->formatLocalized('%d %b %Y') }} г.
+                        </time>
                         @if($article->image)
-                        <img src="{{ asset($article->image->path) }}" alt="{{ $article->image->alt }}" title="{{ $article->image->title }}" class="responsive">
+                        <img src="{{ asset($article->image->path) }}" alt="{{ $article->image->alt }}" title="{{ $article->image->title }}" class="responsive article-image">
                         @endif
                         {!! $article->text !!}
                     </div>
                 </div>
-                <div class="col-3 flex-start">
-                    @include('layouts.partials.sb_list')
-                </div>
             </div>
         </div>
     </main>
-
-
-    @includeWhen($article->gallery, 'layouts.sections.gallery', ['gallery' => $article->gallery])
-
 @endsection

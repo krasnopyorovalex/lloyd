@@ -20,20 +20,19 @@
             <div class="container">
                 <div class="custom-wrapper">
                     <div class="custom-box wow fadeInLeft">
-                        <h2 class="text-primary">ООО «Бикор-техно»<br><span>Антикоррозионная защита от профессионалов для профессионалов</span></h2>
-                        <p>ООО "Бикор-техно" специализируется на поставках ЛКМ специального назначения и технологическом сопровождении сертифицированными инспекторами.</p>
+                        <h2 class="text-primary company-name">Компания LLC "CERNEL INDASTRIS GROUP"<br><span>официальный представитель LLOYDCG в Украине</span></h2>
+                        <p>Специализируемся на экспорте и импорте зерновых, масличных, зернобобовых, эфиромасличных культур. Доставка и продажа оборудования.</p>
                     </div>
                     <div class="button-wrap wow fadeInRight">
                         <a class="btn2 btn2__color_mod" href="{{ route('page.show', ['alias' => 'o-kompanii']) }}">О нас</a>
-                        <a class="btn2" href="{{ route('page.show', ['alias' => 'service']) }}">Узнать больше</a>
+                        <a class="btn2" href="{{ route('catalog.show', ['alias' => 'traktora']) }}">Узнать больше</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        @includeWhen($producers, 'layouts.sections.producers')
         @includeWhen($icons, 'layouts.sections.icons')
-        @includeWhen($projectsInMain, 'layouts.sections.projects')
+        @include('layouts.sections.catalog')
 
         <section class="well2 bg-light">
             <div class="container">
@@ -61,15 +60,14 @@
                                     <td>
                                         Адрес:</td>
                                     <td>
-                                        295048, Республика Крым,<br>
-                                        г. Симферополь,<br>
-                                        ул. Балаклавская, 68</td>
+                                        г. Одесса, ул. Ак. Вильямса, 59 -Е
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>
                                         Телефон</td>
                                     <td>
-                                        <a href="tel:+79185652142">+7 (918) 565-21-42</a>
+                                        <a href="tel:+380509821879">+38 (050) 982-18-79</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -79,7 +77,7 @@
                                     </td>
                                     <td>
                                         <p>
-                                            <b><a href="mailto:info@bikor-tech.ru">info@bikor-tech.ru</a></b>
+                                            <b><a href="mailto:сernelgroup@te.net.ua">сernelgroup@te.net.ua</a></b>
                                         </p>
                                     </td>
                                 </tr>

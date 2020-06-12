@@ -33,7 +33,7 @@ class CreateInfoCommand
     {
         $info = new Info();
         $info->fill($this->request->all());
-        $info->published_at = date('Y-m-d');
+        $info->published_at = now();
         $info->save();
 
         if ($this->request->has('image')) {

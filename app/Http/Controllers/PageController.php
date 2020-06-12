@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Domain\Page\Queries\GetPageByAliasQuery;
 use App\Services\CanonicalService;
 use App\Services\TextParserService;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
 use Illuminate\View\View;
 
 /**
@@ -36,7 +38,7 @@ class PageController extends Controller
 
     /**
      * @param string $alias
-     * @return \Illuminate\Contracts\View\Factory|View
+     * @return Application|Factory|View
      */
     public function show(string $alias = 'index')
     {

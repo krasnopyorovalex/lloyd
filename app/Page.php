@@ -35,6 +35,7 @@ class Page extends Model
 
     private $templates = [
         'page.page' => 'Информационная',
+        'page.catalog' => 'Каталог',
         'page.index' => 'Главная',
         'page.contacts' => 'Контакты'
     ];

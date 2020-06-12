@@ -5,7 +5,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2020-06-12 08:18:52.
+    * Generated on 2020-06-12 13:50:46.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -125,7 +125,6 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
-        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
         'filesystem' => \Illuminate\Filesystem\FilesystemManager::class,
@@ -274,7 +273,6 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
-        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
         'filesystem' => \Illuminate\Filesystem\FilesystemManager::class,
@@ -423,7 +421,6 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
-        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
         'filesystem' => \Illuminate\Filesystem\FilesystemManager::class,
@@ -572,7 +569,6 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
-        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
         'filesystem' => \Illuminate\Filesystem\FilesystemManager::class,
@@ -721,7 +717,6 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
-        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
         'filesystem' => \Illuminate\Filesystem\FilesystemManager::class,
@@ -870,7 +865,6 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
-        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
         'filesystem' => \Illuminate\Filesystem\FilesystemManager::class,
@@ -1019,7 +1013,6 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
-        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
         'filesystem' => \Illuminate\Filesystem\FilesystemManager::class,
@@ -1168,7 +1161,6 @@ namespace PHPSTORM_META {
         'db' => \Illuminate\Database\DatabaseManager::class,
         'db.connection' => \Illuminate\Database\MySqlConnection::class,
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
-        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
         'filesystem' => \Illuminate\Filesystem\FilesystemManager::class,

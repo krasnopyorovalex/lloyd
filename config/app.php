@@ -170,6 +170,7 @@ return [
         App\Providers\ProducersServiceProvider::class,
         App\Providers\IconsServiceProvider::class,
         App\Providers\ProjectsServiceProvider::class,
+        App\Providers\CatalogServiceProvider::class,
     ],
 
     /*

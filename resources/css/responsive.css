@@ -774,6 +774,11 @@
     .camera_prev {
         display: none
     }
+    .article-image {
+        max-width: 100%;
+        float: none;
+        margin: 0 0 1rem 0;
+    }
 }
 @media (min-width:768px) and (max-width:979px) {
     .camera_caption h2 {

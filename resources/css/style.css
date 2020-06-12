@@ -52,7 +52,7 @@ p {
 }
 .contacts__block table td {
     text-align: right;
-    padding: 3px 50px 16px 0;
+    padding: 3px 22px 16px 0;
     line-height: 1.3em;
     vertical-align: top
 }
@@ -61,7 +61,8 @@ footer {
 }
 footer .contacts li {
     display: block;
-    position: relative
+    position: relative;
+    text-transform: none;
 }
 footer .contacts li:before {
     font-size: 18px;
@@ -156,7 +157,6 @@ footer .copyright {
 }
 .page__content h1 {
     font-size: 32px;
-    text-align: center;
 }
 .page__content p {
     text-align: justify;
@@ -420,8 +420,40 @@ footer .copyright {
     margin: 0 auto;
     max-width: 920px;
 }
-.stuck_container {
-    background-image: url("../images/main_bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.company-name {
+    font-size: 34px;
+}
+.list__items figure {
+    margin: 0;
+}
+.list__items .text-wrap {
+    margin: 2rem 0 0 0;
+}
+.list__items .text-wrap a {
+    color: #fff;
+}
+.list__items .text-wrap a:hover {
+    text-decoration: none;
+}
+.list__items .text-wrap .name {
+    font-size: 18px;
+    font-weight: 400;
+    color: #2d3a41;
+}
+.list__items .text-wrap .text p {
+    font-size: 14px;
+    line-height: 26px;
+}
+.article-image {
+    max-width: 450px;
+    height: auto;
+    float: left;
+    margin: 1rem 2rem 1rem 0;
+}
+.list__items .read-more {
+    padding: 2px 16px;
+    font: 400 12px/31px Roboto,sans-serif;
+}
+.article-date {
+    display: block;
 }

@@ -37,16 +37,16 @@ class ShortCodeMiddleware
             [
                 '#(<p(.*)>)?{sitemap}(<\/p>)?#' => function () {
                     $pages = $this->dispatch(new GetAllPagesQuery());
-                    $producers = $this->dispatch(new GetAllProducersQuery());
-                    $projects = $this->dispatch(new GetAllProjectsQuery());
-                    //$articles = $this->dispatch(new GetAllArticlesQuery(true));
+//                    $producers = $this->dispatch(new GetAllProducersQuery());
+//                    $projects = $this->dispatch(new GetAllProjectsQuery());
+                    $articles = $this->dispatch(new GetAllArticlesQuery(true));
                     //$news = $this->dispatch(new GetAllInfosQuery(true));
 
                     return view('layouts.shortcodes.sitemap', [
                         'pages' => $pages,
-                        'producers' => $producers,
-                        'projects' => $projects,
-                        //'articles' => $articles,
+//                        'producers' => $producers,
+//                        'projects' => $projects,
+                        'articles' => $articles,
                         //'news' => $news
                     ]);
                 }
