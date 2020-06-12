@@ -8386,13 +8386,17 @@ article + article {
   position: relative;
   top: 4px
 }
+.header-wrapper .info-list li.fa-envelope:before,
+.header-wrapper .info-list li.fa-map-marker:before {
+  top: 2px;
+}
 .header-wrapper .info-list li * {
-  font: 700 11px/24px Roboto,sans-serif;
+  font: 700 14px/24px Roboto,sans-serif;
   display: inline-block;
   margin-left: 7px
 }
 .header-wrapper .info-list li a:hover {
-  color: #ef4023
+  color: #fff;
 }
 .header-wrapper .info-list li a:active {
   color: #d02b0f

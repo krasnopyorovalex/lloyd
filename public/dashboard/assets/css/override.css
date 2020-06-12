@@ -78,9 +78,9 @@
 }
 .navbar-brand > img {
     width: 100%;
-    max-width: 150px;
+    max-width: 120px;
     height: auto;
-    margin: 5px auto 0;
+    margin: 8px auto 0;
 }
 .center {
     text-align: center;
@@ -331,4 +331,7 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
 }
 .pagination ul li.active a, .pagination ul li.active span {
     color: #7eb71c;
+}
+.navbar-nav>.dropdown-user img {
+    border-radius: 0;
 }

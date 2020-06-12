@@ -23,10 +23,10 @@
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="info-list">
-                                <li class="fa fa-phone"><a href="tel:+79185652142">+7 (918) 565-21-42</a></li>
-                                <li class="fa fa-envelope"><a href="mailto:info@bikor-tech.ru">info@bikor-tech.ru</a></li>
+                                <li class="fa fa-phone"><a href="tel:+380509821879">+38 (050) 982-18-79</a></li>
+                                <li class="fa fa-envelope"><a href="mailto:сernelgroup@te.net.ua">сernelgroup@te.net.ua</a></li>
                                 <li class="fa fa-map-marker">
-                                    <address>г. Симферополь, ул. Балаклавская, 68</address>
+                                    <address>г. Одесса, ул. Ак. Вильямса, 59 -Е</address>
                                 </li>
                             </ul>
                         </div>

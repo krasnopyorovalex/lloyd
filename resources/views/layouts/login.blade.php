@@ -34,12 +34,6 @@
 
                 @yield('content')
 
-                <!-- Footer -->
-                <div class="footer text-muted text-center">
-                    &copy; <a href="https://krasber.ru" target="_blank">ООО «Красбер»</a> 2017 - {{ date('Y') }}
-                </div>
-                <!-- /footer -->
-
             </div>
             <!-- /content area -->
 
@@ -53,12 +47,12 @@
 <!-- /page container -->
 
 <!-- Scripts -->
-<script src="{{ asset('dashboard/assets/js/jquery.js') }}" defer></script>
-<script src="{{ asset('dashboard/assets/js/plugins/loaders/pace.min.js') }}" defer></script>
-<script src="{{ asset('dashboard/assets/js/core/libraries/bootstrap.min.js') }}" defer></script>
-<script src="{{ asset('dashboard/assets/js/plugins/loaders/blockui.min.js') }}" defer></script>
-<script src="{{ asset('dashboard/assets/js/plugins/forms/styling/uniform.min.js') }}" defer></script>
-<script src="{{ asset('dashboard/assets/js/core/app.js') }}" defer></script>
-<script src="{{ asset('dashboard/assets/js/core/user_scripts.js') }}" defer></script>
+<script src="{{ asset('dashboard/assets/js/jquery.js') }}"></script>
+<script src="{{ asset('dashboard/assets/js/plugins/loaders/pace.min.js') }}"></script>
+<script src="{{ asset('dashboard/assets/js/core/libraries/bootstrap.min.js') }}"></script>
+<script src="{{ asset('dashboard/assets/js/plugins/loaders/blockui.min.js') }}"></script>
+<script src="{{ asset('dashboard/assets/js/plugins/forms/styling/uniform.min.js') }}"></script>
+<script src="{{ asset('dashboard/assets/js/core/app.js') }}"></script>
+<script src="{{ asset('dashboard/assets/js/core/user_scripts.js') }}"></script>
 </body>
 </html>

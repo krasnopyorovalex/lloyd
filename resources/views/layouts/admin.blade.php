@@ -77,7 +77,7 @@
                             <li class="navigation-header"><span>Навигация</span> <i class="icon-menu" title="Main pages"></i></li>
                             <li><a href="{{ route('admin.pages.index') }}"><i class="icon-compose"></i> <span>Страницы</span></a></li>
                             <li><a href="{{ route('admin.projects.index') }}"><i class="icon-books"></i> <span>Проекты</span></a></li>
-                            {{--<li><a href="{{ route('admin.articles.index') }}"><i class="icon-magazine"></i> <span>Статьи</span></a></li>--}}
+                            <li><a href="{{ route('admin.articles.index') }}"><i class="icon-magazine"></i> <span>Статьи</span></a></li>
                             {{--<li><a href="{{ route('admin.infos.index') }}"><i class="icon-newspaper"></i> <span>Новости</span></a></li>--}}
                             {{--<li><a href="{{ route('admin.guestbooks.index') }}"><i class="icon-bubble2"></i> <span>Отзывы</span></a></li>--}}
                             {{--<li><a href="{{ route('admin.galleries.index') }}"><i class="icon-stack-picture"></i> <span>Галерея</span></a></li>--}}
@@ -126,12 +126,6 @@
             <div class="content">
 
                 @yield('content')
-
-                <!-- Footer -->
-                <div class="footer text-muted">
-                    &copy; <a href="https://krasber.ru" target="_blank">ООО «Красбер»</a> 2017 - {{ date('Y') }}
-                </div>
-                <!-- /footer -->
 
             </div>
             <!-- /content area -->
