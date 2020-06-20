@@ -60,34 +60,6 @@ include('js/jquery.easing.1.3.js');
     }
 })(jQuery);
 (function($) {
-    var o = $('.owl-carousel');
-    if (o.length > 0) {
-        include('js/owl.carousel.min.js');
-        $(document).ready(function() {
-            o.owlCarousel({
-                margin: 30,
-                smartSpeed: 450,
-                loop: true,
-                dots: false,
-                dotsEach: 1,
-                nav: true,
-                navClass: ['owl-prev fa fa-angle-left', 'owl-next fa fa-angle-right'],
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    768: {
-                        items: 1
-                    },
-                    980: {
-                        items: 1
-                    }
-                }
-            });
-        });
-    }
-})(jQuery);
-(function($) {
     var o = $('html');
     if ((navigator.userAgent.toLowerCase().indexOf('msie') == -1) || (isIE() && isIE() > 9)) {
         if (o.hasClass('desktop')) {
@@ -192,66 +164,7 @@ $(window).scroll(function() {
 
 jQuery(document).ready(function() {
 
-    var filter = jQuery('.filter'),
-        filterProducers = jQuery('.filter__producers'),
-        filterIndustries = jQuery('.filter__industries'),
-        projectsBox = jQuery('.project__box'),
-        filterValues = {
-            'industry': false,
-            'producer': false,
-            'getIndustry': function (item) {
-                return this.industry ? jQuery(item).hasClass(this.industry) : true;
-            },
-            'getProducer': function (item) {
-                return this.producer ? jQuery(item).hasClass(this.producer) : true;
-            }
-    };
-
-    if(filter.length) {
-        filterProducers.on('click', 'li:nth-child(1)', function () {
-            return filterValues.producer = false;
-        });
-        filterIndustries.on('click', 'li:nth-child(1)', function () {
-            return filterValues.industry = false;
-        });
-        filter.on('click', 'li', function () {
-            var _this = jQuery(this),
-                filter = _this.attr("data-filter");
-
-            if(filter.indexOf('industry') !== -1) {
-                filterValues.industry = filter;
-            } else if (filter.indexOf('producer') !== -1) {
-                filterValues.producer = filter;
-            }
-
-            if (filter) {
-                projectsBox.find(">div").hide().fadeIn().filter(function () {
-                    var _this = jQuery(this);
-                    return ! (filterValues.getIndustry(_this) && filterValues.getProducer(_this));
-                }).hide();
-            } else {
-                projectsBox.find(">div").fadeIn();
-            }
-
-            return _this.addClass('active').siblings('li').removeClass('active');
-        });
-    }
-
-    var mainSection = jQuery("main"),
-        faq = mainSection.find(".faq");
-    if(faq.length) {
-        faq.on("click", "li .q", function () {
-            var _this = jQuery(this),
-                parent = _this.parent("li");
-            faq.find(".a").hide();
-            if(parent.hasClass("active")) {
-                return faq.find("li").removeClass("active");
-            }
-            return faq.find("li").removeClass("active") && _this.next(".a").fadeIn("slow") && parent.addClass("active");
-        });
-    }
-
-    var scrollTop = $ (".scroll-top");
+    const scrollTop = $(".scroll-top");
     if (scrollTop.length) {
 
         //Check to see if the window is top if not then display button
@@ -270,11 +183,106 @@ jQuery(document).ready(function() {
         });
     }
 
-    var prevPage = jQuery(".previous__page");
-    if(prevPage.length) {
-        prevPage.on("click", function () {
-            return window.history.back();
+    const gallery = jQuery(".product-gallery");
+    if (gallery.length) {
+        gallery.owlCarousel({
+            loop:false,
+            margin:0,
+            nav:false,
+            dots:false,
+            items: 1
         });
+
+        gallery.on('changed.owl.carousel', function(event) {
+            const index = event.item.index,
+                items = thumbs.find(".owl-item");
+            items.removeClass("current");
+            return thumbs.trigger('to.owl.carousel', index) && items.eq(index).addClass("current");
+        });
+
+        const thumbs = jQuery(".thumbs-gallery");
+        thumbs.owlCarousel({
+            items: 6,
+            margin: 5,
+            nav:true,
+            dots:false,
+            responsive : {
+                0 : {
+                    items: 4
+                },
+                480 : {
+                    items: 6
+                },
+                768 : {
+                    items: 8
+                }
+            }
+        });
+        thumbs.on('click', 'img', function() {
+            const _this = jQuery(this),
+                index = _this.attr("data-index");
+            thumbs.find(".owl-item").removeClass("current");
+            return _this.closest(".owl-item").addClass("current") && gallery.trigger('to.owl.carousel', index);
+        });
+        thumbs.find(".owl-item").eq(0).addClass("current");
     }
 
+    /*
+    |-----------------------------------------------------------
+    |   notification
+    |-----------------------------------------------------------
+    */
+    const Notification = {
+        element: false,
+        setElement: function (element) {
+            return this.element = element;
+        },
+        notify: function (message) {
+            if( ! this.element) {
+                this.setElement(jQuery(".notify"));
+            }
+            return this.element.html('<div>' + message + '</div>') && this.element.fadeIn().delay(7000).fadeOut();
+        }
+    };
+
+    formHandler("#product-form", Notification);
+
+});
+
+jQuery.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': jQuery('meta[name="csrf-token"]').attr('content')
+    }
+});
+
+function formHandler(selector, Notification) {
+    return jQuery(document).on("submit", selector, function(e){
+        e.preventDefault();
+        const _this = jQuery(this),
+            url = _this.attr('action'),
+            data = _this.serialize(),
+            submitBlock = _this.find(".submit"),
+            submitBtn = submitBlock.find(".btn");
+            //agree = _this.find(".i__agree input[type=checkbox]");
+        // if (agree.length && ! agree.prop("checked")) {
+        //     agree.closest(".i__agree").find(".error").fadeIn().delay(3000).fadeOut();
+        //     return false;
+        // }
+        return jQuery.ajax({
+            type: "POST",
+            dataType: "json",
+            url: url,
+            data: data,
+            beforeSend: function() {
+                return submitBtn.addClass("is__sent") && submitBtn.prop("disabled",true);
+            },
+            success: function (data) {
+                Notification.notify(data.message);
+                return submitBtn.removeClass("is__sent") && _this.trigger("reset") && submitBtn.prop("disabled",false);
+            }
+        });
+    });
+}
+jQuery(document).ajaxError(function () {
+    return jQuery("form .submit").removeClass("is__sent") && jQuery('.notify').html('<div>Произошла ошибка =(</div>').fadeIn().delay(3000).fadeOut();
 });

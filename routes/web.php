@@ -16,6 +16,7 @@ Route::pattern('alias', '[\da-z-]+');
 Auth::routes();
 
 Route::get('sitemap.xml', 'SitemapController@xml')->name('sitemap.xml');
+Route::post('send-order', 'FormHandlerController@order')->name('send.product.form');
 
 Route::group(['middleware' => ['redirector', 'shortcode']], function () {
     Route::get('{alias}', 'PageController@show')->name('page.show');

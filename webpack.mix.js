@@ -11,9 +11,11 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js/app.js')
+mix.js(['resources/js/owl/owl.carousel.min.js', 'resources/js/app.js'], 'public/js/app.js')
     .styles([
         'resources/css/bootstrap-grid.css',
+        'resources/css/owl.carousel.min.css',
+        'resources/css/owl.theme.default.min.css',
         'resources/css/app.min.css',
         'resources/css/style.css',
         'resources/css/responsive.css'

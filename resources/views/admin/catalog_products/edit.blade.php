@@ -16,6 +16,7 @@
             <div class="tabbable">
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#main" data-toggle="tab">Основное</a></li>
+                    <li><a href="#images" data-toggle="tab">Галерея</a></li>
                 </ul>
 
                 <div class="tab-content">
@@ -64,6 +65,24 @@
                                 @submit_btn()
                             </form>
                         </div>
+                    <div class="tab-pane" id="images">
+                        <form action="#" enctype="multipart/form-data" method="post">
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <input type="hidden" name="catalogProductId" value="{{ $catalogProduct->id }}">
+                                    <input type="hidden" name="uploadUrl" value="{{ route('admin.catalog_product_images.store', $catalogProduct) }}">
+                                    <input type="hidden" name="updatePositionUrl" value="{{ route('admin.catalog_product_images.update_positions') }}">
+                                    <input type="file" class="file-input-ajax" multiple="multiple" name="upload" accept="image/*">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="clearfix"></div>
+                        @if ($catalogProduct->images)
+                            <div id="_images_box">
+                                @include('admin.catalog_products._images_box')
+                            </div>
+                        @endif
+                    </div>
                 </div>
             </div>
         </div>
@@ -72,6 +91,14 @@
         @include('layouts.partials._image_attributes_popup', ['image' => $catalogProduct->image])
     @endif
     @push('scripts')
+        <script src="{{ asset('dashboard/ckeditor/ckeditor.js') }}"></script>
+    @endpush
+    <div id="edit-image" class="modal fade"></div>
+    @push('scripts')
+        <script src="{{ asset('dashboard/assets/js/plugins/ui/dragula.min.js') }}"></script>
+        <script src="{{ asset('dashboard/assets/js/pages/extension_dnd.js') }}"></script>
+        <script src="{{ asset('dashboard/assets/js/plugins/uploaders/fileinput.min.js') }}"></script>
+        <script src="{{ asset('dashboard/assets/js/pages/uploader_bootstrap.js') }}"></script>
         <script src="{{ asset('dashboard/ckeditor/ckeditor.js') }}"></script>
     @endpush
 @endsection

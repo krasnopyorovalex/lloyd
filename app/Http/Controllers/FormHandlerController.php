@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Domain\Guestbook\Commands\CreateGuestbookCommand;
 use App\Http\Requests\Forms\GuestbookCheckRequest;
+use App\Http\Requests\Forms\OrderRequest;
+use App\Mail\OrderSent;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 
@@ -16,6 +18,20 @@ class FormHandlerController extends Controller
     use DispatchesJobs;
 
     private $to = 'dom2008@mail.ru';
+
+    /**
+     * @param OrderRequest $request
+     * @return array
+     */
+    public function order(OrderRequest $request): array
+    {
+        Mail::to([$this->to])->send(new OrderSent($request->validated()));
+
+        return [
+            'message' => 'Форма отправлена успешно. Наш менеджер свяжется с Вами в ближайшее время',
+            'status' => 200
+        ];
+    }
 
     /**
      * @param GuestbookCheckRequest $request

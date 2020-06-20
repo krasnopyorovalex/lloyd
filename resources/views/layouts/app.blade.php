@@ -39,8 +39,8 @@
                     <div class="row align-items-center header__menu">
                         <div class="col-md-3">
                             <div class="navbar-header">
-                                <a href="/">
-                                    <img class="brand_img" src="{{ asset('images/logo.png') }}" alt=""/>
+                                <a href="{{ route('page.show') }}">
+                                    <img class="brand_img" src="{{ asset('images/logo.gif') }}" alt=""/>
                                 </a>
                             </div>
                         </div>
@@ -64,6 +64,8 @@
                         <ul class="contacts">
                             <li class="fa fa-map-marker">г. Одесса, ул. Ак. Вильямса, 59 -Е</li>
                             <li class="fa fa-phone"><a href="tel:+380509821879">+38 (050) 982-18-79</a></li>
+                            <li class="fa fa-envelope"><a href="mailto:lloydcg.uk@gmail.com">lloydcg.uk@gmail.com</a></li>
+                            <li class="fa fa-envelope"><a href="mailto:certiscapgroup@hotmail.com">certiscapgroup@hotmail.com</a></li>
                             <li class="fa fa-envelope"><a href="mailto:сernelgroup@te.net.ua">сernelgroup@te.net.ua</a></li>
                         </ul>
                     </div>
@@ -75,7 +77,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="copyright">© БИКОР-ТЕХНО, {{ date('Y') }} Г. | ВСЕ ПРАВА ЗАЩИЩЕНЫ</div>
+                        <div class="copyright">© LLC "CERNEL INDASTRIS GROUP", {{ date('Y') }} Г. | ВСЕ ПРАВА ЗАЩИЩЕНЫ</div>
                     </div>
                     <div class="col-md-6">
                         <div class="develop">
@@ -86,7 +88,7 @@
                             </div>
                             <div class="develop__logo">
                                 <a href="https://krasber.ru" target="_blank">
-                                    <img src="{{ asset('images/logo_green.svg') }}" alt="Веб-студия Красбер">
+                                    <img src="{{ asset('images/krasber.svg') }}" alt="Веб-студия Красбер">
                                 </a>
                             </div>
                         </div>
@@ -99,7 +101,7 @@
     <button class="scroll-top">
         <i class="fa fa-angle-up" aria-hidden="true"></i>
     </button>
-
+    <div class="notify"></div>
     <script src="{{ asset('js/jquery-2.2.4.min.js') }}"></script>
     <script src="{{ asset('js/jquery-migrate-1.2.1.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>

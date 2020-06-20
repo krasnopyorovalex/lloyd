@@ -32,6 +32,32 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1>{{ $catalog->name }}</h1>
+
+                        @if($products)
+                            <div class="row project__box">
+                                @foreach($products as $product)
+                                    <div class="col-md-4">
+                                        <div class="project">
+                                            @if($product->image)
+                                                <figure>
+                                                    <a href="{{ $product->url }}">
+                                                        <img src="{{ asset($product->image->path) }}" alt="{{ $product->image->alt }}" title="{{ $product->image->title }}">
+                                                    </a>
+                                                </figure>
+                                            @endif
+                                            <div class="desc">
+                                                <div class="name">
+                                                    <a href="{{ $product->url }}">{{ $product->name }}</a>
+                                                </div>
+                                                <div class="button-wrap">
+                                                    <a href="{{ $product->url }}" class="btn2 btn2__color_mod">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        @endif
                         {!! $catalog->text !!}
                     </div>
                 </div>

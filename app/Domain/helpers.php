@@ -106,3 +106,12 @@ if (! function_exists('add_css_class')) {
         return count($classes) ? ' class="'. implode(' ', $classes) .'"' : '';
     }
 }
+
+if (! function_exists('format_as_price')) {
+    function format_as_price(int $price): string
+    {
+        $value = number_format($price, 0, '.', ' ');
+
+        return  sprintf('%s RUB', $value);
+    }
+}
