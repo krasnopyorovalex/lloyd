@@ -5769,7 +5769,8 @@ strong {
   line-height: 27px
 }
 .img-add {
-  margin-top: 8px
+  margin-top: 8px;
+  max-height: 252px;
 }
 .offset2 {
   margin-top: 15px
