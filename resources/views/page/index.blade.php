@@ -31,8 +31,8 @@
             </div>
         </section>
 
-        @includeWhen($icons, 'layouts.sections.icons')
         @include('layouts.sections.catalog')
+        @includeWhen($icons, 'layouts.sections.icons')
 
         <section class="well2 bg-light">
             <div class="container">

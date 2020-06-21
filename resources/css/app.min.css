@@ -8663,7 +8663,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   outline: 0
 }
 .sf-menu > li > ul li {
-  position: relative
+  position: relative;
+  width: 100%;
 }
 .sf-menu > li > ul li ul.dropdown-menu {
   position: absolute;
@@ -11380,4 +11381,10 @@ body.search_body {
 }
 .camera_next:before {
   content: '\f105'
+}
+.stuck_container {
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 7px rgba(133,133,133,.25);
 }

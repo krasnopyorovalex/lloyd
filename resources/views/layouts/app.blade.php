@@ -105,6 +105,8 @@
     <script src="{{ asset('js/jquery-2.2.4.min.js') }}"></script>
     <script src="{{ asset('js/jquery-migrate-1.2.1.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/superfish.js') }}"></script>
+    <script src="{{ asset('js/sticky_menu.js') }}"></script>
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

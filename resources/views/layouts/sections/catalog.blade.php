@@ -22,7 +22,7 @@
             @endforeach
         </div>
         <div class="button-wrap">
-            <a class="btn2" href="{{ route('page.show', ['alias' => 'service']) }}">Сервис</a>
+            <a class="btn2" href="{{ route('page.show', ['alias' => 'o-kompanii']) }}">Направления компании</a>
             <a class="btn2 btn2__color_mod" href="{{ route('page.show', ['alias' => 'catalog']) }}">Все проекты</a>
         </div>
     </div>

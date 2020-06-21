@@ -227,6 +227,8 @@ jQuery(document).ready(function() {
         thumbs.find(".owl-item").eq(0).addClass("current");
     }
 
+    jQuery("#stuck_container").sticky({zIndex: 20});
+
     /*
     |-----------------------------------------------------------
     |   notification
