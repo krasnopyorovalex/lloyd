@@ -2,7 +2,9 @@
 
 namespace App\Http\Middleware;
 
+use App\Catalog;
 use App\Domain\Article\Queries\GetAllArticlesQuery;
+use App\Domain\Catalog\Queries\GetAllCatalogsQuery;
 use App\Domain\Info\Queries\GetAllInfosQuery;
 use App\Domain\OurService\Queries\GetAllOurServicesQuery;
 use App\Domain\Page\Queries\GetAllPagesQuery;
@@ -40,6 +42,7 @@ class ShortCodeMiddleware
 //                    $producers = $this->dispatch(new GetAllProducersQuery());
 //                    $projects = $this->dispatch(new GetAllProjectsQuery());
                     $articles = $this->dispatch(new GetAllArticlesQuery(true));
+                    $catalogs = $this->dispatch(new GetAllCatalogsQuery);
                     //$news = $this->dispatch(new GetAllInfosQuery(true));
 
                     return view('layouts.shortcodes.sitemap', [
@@ -47,6 +50,7 @@ class ShortCodeMiddleware
 //                        'producers' => $producers,
 //                        'projects' => $projects,
                         'articles' => $articles,
+                        'catalogs' => $catalogs
                         //'news' => $news
                     ]);
                 }
