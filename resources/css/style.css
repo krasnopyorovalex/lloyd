@@ -615,3 +615,6 @@ footer .copyright {
 .phone-item + .phone-item {
     margin: .5rem 0 0 0;
 }
+.is-sticky .header__menu {
+    padding: 0;
+}
