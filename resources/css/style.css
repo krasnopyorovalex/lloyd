@@ -96,7 +96,8 @@ footer .develop__logo {
 }
 footer .copyright {
     display: block;
-    padding: 1.2em 0 0 0
+    padding: 1.2em 0 0 0;
+    font-size: 14px;
 }
 .tabs-left {
     border-bottom: none;
@@ -617,4 +618,27 @@ footer .copyright {
 }
 .is-sticky .header__menu {
     padding: 0;
+}
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+.logo-link span {
+    margin: 0 0 0 1rem;
+    font-weight: 700;
+    line-height: normal;
+}
+.logo-lion {
+    margin: 0 auto;
+}
+.logo-lion img {
+    max-width: 110px;
+}
+.text-running {
+    background-color: #719A3F;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 2rem 0;
+    line-height: normal;
 }

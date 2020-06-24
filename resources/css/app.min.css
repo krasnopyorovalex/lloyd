@@ -5648,7 +5648,8 @@ footer {
   padding-bottom: 62px;
   font: 300 16px/16px Roboto,sans-serif;
   text-transform: uppercase;
-  background: #d1d2d4
+  background: #600F16;
+  color: #fff;
 }
 footer a {
   text-transform: none
@@ -5941,7 +5942,7 @@ mark {
   background: #f44236
 }
 .bg-light {
-  background: #fff url(../images/primary-bg.jpg) repeat
+  background-color: rgba(254, 232, 211, .5);
 }
 .bg-light .contact-list [class*=fa] {
   color: #2d3a41;
@@ -6264,8 +6265,9 @@ article + article {
   border-bottom: 1px solid #bfc0c3
 }
 .header-wrapper {
-  height: 48px;
-  background: #737477;
+  padding: .5rem 0;
+  background: #600F16;
+  color: #fff;
   display: block
 }
 .header-wrapper:after,
@@ -6327,10 +6329,15 @@ article + article {
   margin-left: 6px
 }
 .header-wrapper .info-list {
-  padding-top: 7px
+  padding-top: 7px:
+}
+.header-wrapper .info-list img {
+  width: 24px;
+  height: 24px;
+  margin: 0 0 0 .5rem;
 }
 .header-wrapper .info-list li {
-  color: #c1c2c3
+  color: #fff;
 }
 .header-wrapper .info-list li:first-child:before {
   font-size: 26px
@@ -6351,14 +6358,17 @@ article + article {
   display: inline-block;
   margin-left: 7px
 }
-.header-wrapper .info-list li a:hover {
+.header-wrapper .info-list li a {
   color: #fff;
+}
+.header-wrapper .info-list li a:hover {
+  color: #c1c2c3;
 }
 .header-wrapper .info-list li a:active {
   color: #d02b0f
 }
 .header-wrapper .info-list li + li {
-  margin-left: 27px
+  margin-left: 16px
 }
 .button-wrap {
   float: right
@@ -8428,7 +8438,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-width: 1px 0 0
 }
 .navbar-header {
-  max-width: 307px
+  display: flex;
+  align-items: center;
 }
 .navbar-brand {
   position: relative;
@@ -8495,10 +8506,14 @@ textarea.input-group-sm > .input-group-btn > .btn {
   line-height: 29px
 }
 .brand_img {
-  padding-top: 10px;
   float: left;
   width: 160px;
   height: 110px;
+  transition:.3s;
+}
+.is-sticky .brand_img {
+  width: 120px;
+  height: auto;
 }
 .brand_img + .brand_name {
   margin-top: 25px;

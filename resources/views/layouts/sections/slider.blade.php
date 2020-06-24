@@ -6,7 +6,9 @@
                     <div class="camera_caption fadeIn">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-offset-5 col-lg-7"><h2>{{ $image->name }}</h2></div>
+                                <div class="col-lg-12">
+                                    <h2 class="text-center">{{ $image->name }}</h2>
+                                </div>
                             </div>
                         </div>
                     </div>

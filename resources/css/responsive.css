@@ -116,9 +116,6 @@
     .navbar-fixed-top {
         border-radius: 0
     }
-    .navbar-header {
-        display: inline-block;
-    }
     .navbar-nav {
         margin: 0;
         font: 400 16px/31px Roboto,sans-serif;
@@ -170,11 +167,9 @@
         display: none
     }
     .navbar-header {
-        display: inline-block;
         padding-top: 5px;
         padding-bottom: 5px;
         float: none;
-        max-width: 310px;
         margin-left: auto;
         margin-right: auto
     }
@@ -528,6 +523,13 @@
     .custom-wrapper .button-wrap .btn2 + .btn2 {
         margin-left: 0;
         margin-top: 10px
+    }
+    .logo-lion img {
+        max-width: 80px;
+    }
+    .brand_img {
+        width: 100px;
+        height: auto;
     }
 }
 @media (max-width:450px) {
