@@ -8507,11 +8507,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .brand_img {
   float: left;
-  width: 160px;
-  height: 110px;
-  transition:.3s;
-}
-.is-sticky .brand_img {
   width: 120px;
   height: auto;
 }
