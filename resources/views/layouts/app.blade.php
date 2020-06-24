@@ -25,11 +25,11 @@
                             <ul class="info-list">
                                 <li class="fa">
                                     <a href="tel:+359876092441">+35 987 609 24 41</a>
-                                    <img src="http://lloyd.ld/images/viber.svg" alt="">
+                                    <img src="{{ asset('images/viber.svg') }}" alt="">
                                 </li>
                                 <li class="fa">
                                     <a href="tel:+79681934546">+7 968 193 45 46</a>
-                                    <img src="http://lloyd.ld/images/whatsapp.svg" alt="">
+                                    <img src="{{ asset('images/whatsapp.svg') }}" alt="">
                                 </li>
                                 <li class="fa"><a href="tel:+74951115932">+7 495 111 59 32</a> Fax</li>
                                 <li class="fa fa-envelope"><a href="mailto:сernelgroup@te.net.ua">сernelgroup@te.net.ua</a></li>
