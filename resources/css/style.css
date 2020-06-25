@@ -629,7 +629,7 @@ footer .copyright {
     line-height: normal;
 }
 .logo-lion {
-    margin: 0 auto;
+    margin: 0 0 0 auto;
 }
 .logo-lion img {
     max-width: 110px;

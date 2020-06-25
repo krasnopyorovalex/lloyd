@@ -45,7 +45,7 @@
             <div id="stuck_container" class="stuck_container">
                 <div class="container">
                     <div class="row align-items-center header__menu">
-                        <div class="col-md-5">
+                        <div class="col-md-4">
                             <div class="navbar-header">
                                 <a href="{{ route('page.show') }}" class="logo-link">
                                     <img class="brand_img" src="{{ asset('images/evrosoyuz-es-evropa-flag.jpg') }}" title="Компания LLC CERNEL INDASTRIS GROUP" alt="Компания LLC CERNEL INDASTRIS GROUP"/>
@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-8">
                             <nav class="navbar navbar-default navbar-static-top center" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
                                 @includeWhen($menu->get('menu_header'), 'layouts.menus.header')
                             </nav>
