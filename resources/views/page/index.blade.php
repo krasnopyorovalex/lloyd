@@ -49,7 +49,7 @@
                 <div class="row">
                     <div class="col-md-8 col-sm-12 col-xs-12">
                         <div class="map">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1zKnG4d9GHuKPNZ2WLWu04WGhBLipm9IX" width="100%" height="475"></iframe>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1zKnG4d9GHuKPNZ2WLWu04WGhBLipm9IX" width="100%" height="475" frameborder="0"></iframe>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 col-xs-12">

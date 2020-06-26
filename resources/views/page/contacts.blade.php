@@ -81,6 +81,7 @@
             </div>
         </section>
     </main>
-
-    <iframe src="https://www.google.com/maps/d/embed?mid=1zKnG4d9GHuKPNZ2WLWu04WGhBLipm9IX" width="100%" height="480"></iframe>
+    <div class="contacts-map">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1zKnG4d9GHuKPNZ2WLWu04WGhBLipm9IX" width="100%" height="480" frameborder="0"></iframe>
+    </div>
 @endsection

@@ -648,3 +648,6 @@ footer .copyright {
     padding: 2rem 0;
     line-height: normal;
 }
+.contacts-map {
+    height: 480px;
+}
