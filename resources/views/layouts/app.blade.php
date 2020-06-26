@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>@yield('title', '- Бикор Техно - специализированная лакокрасочная компания')</title>
+    <title>@yield('title', '- Компания LLC CERNEL INDASTRIS GROUP')</title>
     <meta name="description" content="@yield('description', '')">
     <meta name="google" content="notranslate">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -34,7 +34,7 @@
                                 <li class="fa"><a href="tel:+74951115932">+7 495 111 59 32</a> Fax</li>
                                 <li class="fa fa-envelope"><a href="mailto:сernelgroup@te.net.ua">сernelgroup@te.net.ua</a></li>
                                 <li class="fa fa-map-marker">
-                                    <address>г. Одесса, ул. Ак. Вильямса, 59 -Е</address>
+                                    <address>Республика Кипр., г. Лимассол,  ул. Eressou 1</address>
                                 </li>
                             </ul>
                         </div>
@@ -77,7 +77,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="contacts">
-                            <li class="fa fa-map-marker">г. Одесса, ул. Ак. Вильямса, 59 -Е</li>
+                            <li class="fa fa-map-marker">Республика Кипр., г. Лимассол,  ул. Eressou 1</li>
                             <li class="fa fa-phone"><a href="tel:+380509821879">+38 (050) 982-18-79</a></li>
                             <li class="fa fa-envelope"><a href="mailto:lloydcg.uk@gmail.com">lloydcg.uk@gmail.com</a></li>
                             <li class="fa fa-envelope"><a href="mailto:certiscapgroup@hotmail.com">certiscapgroup@hotmail.com</a></li>

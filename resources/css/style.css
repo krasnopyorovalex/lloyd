@@ -51,9 +51,15 @@ p {
 }
 .contacts__block table td {
     text-align: right;
-    padding: 3px 22px 16px 0;
+    padding: 3px 10px 10px 0;
     line-height: 1.3em;
     vertical-align: top
+}
+.contacts__block table td p {
+    margin: 0;
+}
+.contacts__block table td .phone-item {
+    justify-content: flex-end;
 }
 footer {
     padding: 2em 0
