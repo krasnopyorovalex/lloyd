@@ -6354,7 +6354,7 @@ article + article {
   top: 2px;
 }
 .header-wrapper .info-list li * {
-  font: 700 14px/24px Roboto,sans-serif;
+  font: 700 13px/24px Roboto,sans-serif;
   display: inline-block;
   margin-left: 7px
 }
