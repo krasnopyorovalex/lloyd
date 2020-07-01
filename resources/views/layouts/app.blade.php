@@ -77,7 +77,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="contacts">
-                            <li class="fa fa-map-marker">Республика Кипр., г. Лимассол,  ул. Eressou 1</li>
+                            <li class="fa fa-map-marker">КИПР, г.ЛИМАССОЛ, УЛ.ERESSOU 1 MESA GEITONIA. 40021</li>
                             <li class="fa fa-phone"><a href="tel:+380509821879">+38 (050) 982-18-79</a></li>
                             <li class="fa fa-envelope"><a href="mailto:lloydcg.uk@gmail.com">lloydcg.uk@gmail.com</a></li>
                             <li class="fa fa-envelope"><a href="mailto:certiscapgroup@hotmail.com">certiscapgroup@hotmail.com</a></li>
