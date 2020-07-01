@@ -123,6 +123,7 @@ document.write('<meta name="viewport" content="width=device-width,initial-scale=
                 thumbnails: false,
                 playPause: false,
                 hover: false,
+                easing: 'easeInOutExpo',
                 loader: 'none',
                 navigation: true,
                 navigationHover: true,
