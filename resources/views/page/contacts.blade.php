@@ -71,8 +71,7 @@
                             </li>
                             <li class="col-md-4 col-sm-12 col-xs-12">
                                 <div class="fa fa-map-marker"></div>
-                                <address>г. Одесса, ул. Ак. Вильямса, 59 -Е
-                                </address>
+                                <address>КИПР, г.ЛИМАССОЛ, УЛ.ERESSOU 1 MESA GEITONIA. 40021</address>
                             </li>
                         </ul>
 

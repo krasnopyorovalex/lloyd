@@ -6334,7 +6334,10 @@ article + article {
 .header-wrapper .info-list img {
   width: 24px;
   height: 24px;
-  margin: 0 0 0 .5rem;
+  margin: 0 0 0 .1rem;
+}
+.header-wrapper .info-list li.fa-envelope a {
+  margin-left: 7px;
 }
 .header-wrapper .info-list li {
   color: #fff;
@@ -6354,9 +6357,11 @@ article + article {
   top: 2px;
 }
 .header-wrapper .info-list li * {
-  font: 700 13px/24px Roboto,sans-serif;
+  font: 700 12px/22px Roboto,sans-serif;
   display: inline-block;
-  margin-left: 7px
+}
+.header-wrapper .info-list li span {
+  margin-left: 2px;
 }
 .header-wrapper .info-list li a {
   color: #fff;
@@ -6368,7 +6373,7 @@ article + article {
   color: #d02b0f
 }
 .header-wrapper .info-list li + li {
-  margin-left: 10px
+  margin-left: 8px
 }
 .button-wrap {
   float: right

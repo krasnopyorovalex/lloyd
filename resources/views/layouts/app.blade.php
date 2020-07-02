@@ -31,10 +31,10 @@
                                     <a href="tel:+79681934546">+7 968 193 45 46</a>
                                     <img src="{{ asset('images/whatsapp.svg') }}" alt="">
                                 </li>
-                                <li class="fa"><a href="tel:+74951115932">+7 495 111 59 32</a> Fax</li>
+                                <li class="fa"><a href="tel:+74951115932">+7 495 111 59 32</a> <span>Fax</span></li>
                                 <li class="fa fa-envelope"><a href="mailto:сernelgroup@te.net.ua">сernelgroup@te.net.ua</a></li>
                                 <li class="fa fa-map-marker">
-                                    <address>Республика Кипр., г. Лимассол,  ул. Eressou 1</address>
+                                    <address>КИПР, г.ЛИМАССОЛ, УЛ.ERESSOU 1 MESA GEITONIA. 40021</address>
                                 </li>
                             </ul>
                         </div>
@@ -45,18 +45,18 @@
             <div id="stuck_container" class="stuck_container">
                 <div class="container">
                     <div class="row align-items-center header__menu">
-                        <div class="col-md-4">
+                        <div class="col-md-5">
                             <div class="navbar-header">
                                 <a href="{{ route('page.show') }}" class="logo-link">
                                     <img class="brand_img" src="{{ asset('images/evrosoyuz-es-evropa-flag.jpg') }}" title="Компания LLC CERNEL INDASTRIS GROUP" alt="Компания LLC CERNEL INDASTRIS GROUP"/>
-                                    <span class="logo-info">с 2012 года <br />на рынке</span>
+                                    <span class="logo-info">с 2013 года на рынке<br />агропроизводства</span>
                                 </a>
                                 <div class="logo-lion">
                                     <img src="{{ asset('images/logo-2.png') }}" alt="">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-7">
                             <nav class="navbar navbar-default navbar-static-top center" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
                                 @includeWhen($menu->get('menu_header'), 'layouts.menus.header')
                             </nav>
@@ -70,14 +70,14 @@
         @yield('content')
 
         <div class="text-running">
-            <marquee scrollamount="10">КОМПАНИЯ CERTIS CAPITAL GROUP LTD ПРОИЗВОДИТ ПРОДАЖУ АМЕРИКАНСКИХ СЕМЯН НЕ СОДЕРЖАЩИХ ГМО, А ТАКЖЕ КАНАДСКИХ ТРАНСГЕННЫХ СЕМЯН РАПСА, ПШЕНИЦЫ, ЯЧЕНЯ, ПОДСОЛНЕЧНИКА, КУКУРУЗЫ, СОИ, ГРЕЧИХИ. ЗАКЛЮЧАЕТ ДОГОВОР НА ЗАКУПКУ БУДУЩЕГО УРОЖАЯ С СЕЛЬСКОХОЗЯЙСТВЕННЫМИ ПРИДПРИЯТИЯМИ РОССИИ И ДЕЛАЕТ ПРЕДОПЛАТУ В РАЗМЕРЕ 35% ЗА БУДУЩИЙ УРОЖАЙ.</marquee>
+            <marquee scrollamount="10">КОМПАНИЯ CERTIS CAPITAL GROUP LTD ПРОИЗВОДИТ ПРОДАЖУ АМЕРИКАНСКИХ СЕМЯН НЕ СОДЕРЖАЩИХ ГМО, А ТАКЖЕ КАНАДСКИХ ТРАНСГЕННЫХ СЕМЯН РАПСА, ПШЕНИЦЫ, ЯЧМЕНЯ, ПОДСОЛНЕЧНИКА, КУКУРУЗЫ, СОИ, ГРЕЧИХИ. ЗАКЛЮЧАЕТ ДОГОВОР НА ЗАКУПКУ БУДУЩЕГО УРОЖАЯ С СЕЛЬСКОХОЗЯЙСТВЕННЫМИ ПРЕДПРИЯТИЯМИ РОССИИ, КАЗАХСТАНА, КИРГИЗИИ, ТАДЖИКИСТАНА И ДЕЛАЕТ ПРЕДОПЛАТУ В РАЗМЕРЕ 35% ЗА БУДУЩИЙ УРОЖАЙ</marquee>
         </div>
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="contacts">
-                            <li class="fa fa-map-marker">Республика Кипр., г. Лимассол,  ул. Eressou 1</li>
+                            <li class="fa fa-map-marker">КИПР, г.ЛИМАССОЛ, УЛ.ERESSOU 1 MESA GEITONIA. 40021</li>
                             <li class="fa fa-phone"><a href="tel:+380509821879">+38 (050) 982-18-79</a></li>
                             <li class="fa fa-envelope"><a href="mailto:lloydcg.uk@gmail.com">lloydcg.uk@gmail.com</a></li>
                             <li class="fa fa-envelope"><a href="mailto:certiscapgroup@hotmail.com">certiscapgroup@hotmail.com</a></li>
@@ -92,7 +92,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="copyright">© LLC "CERNEL INDASTRIS GROUP", {{ date('Y') }} Г. | ВСЕ ПРАВА ЗАЩИЩЕНЫ</div>
+                        <div class="copyright">© CERTIS CAPITAL GROUP LTD, 2013-{{ date('Y') }}гг. Все права защищены</div>
                     </div>
                     <div class="col-md-6">
                         <div class="develop">
