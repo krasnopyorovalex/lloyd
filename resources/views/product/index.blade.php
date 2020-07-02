@@ -54,10 +54,12 @@
                                 @endif
                             </div>
                             <div class="col-md-6">
+                                @if($product->price)
                                 <div class="product-price">
                                     <div class="product-price-label">Цена:</div>
                                     <div class="product-price-value">{{ format_as_price($product->price) }}</div>
                                 </div>
+                                @endif
                                 <form action="{{ route('send.product.form') }}" method="post" class="product-form" id="product-form">
                                     @csrf
                                     <div class="product-form-title">Запросить договор</div>

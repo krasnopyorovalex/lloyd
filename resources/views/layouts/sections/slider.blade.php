@@ -1,19 +1,14 @@
+@if(count($slider->images))
 <section class="border-top">
-    <div class="camera_container">
-        <div id="camera" class="camera_wrap">
-            @foreach ($slider->images as $image)
-                <div data-src="{{ asset($image->getPath()) }}">
-                    <div class="camera_caption fadeIn">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <h2 class="text-center">{{ $image->name }}</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="owl-carousel owl-theme main-slider">
+        @foreach($slider->images as $image)
+            <div class="item">
+                <img src="{{ asset($image->getPath()) }}" alt="{{ $image->alt }}" title="{{ $image->title }}">
+                <div class="camera_caption">
+                    <h2>{{ $image->name }}</h2>
                 </div>
-            @endforeach
-        </div>
+            </div>
+        @endforeach
     </div>
 </section>
+@endif

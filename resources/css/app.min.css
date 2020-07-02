@@ -11333,20 +11333,19 @@ body.search_body {
 }
 .camera_caption {
   position: absolute;
-  top: 50%;
+  top: calc(50% - 40px);
   left: 0;
   right: 0;
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  padding-left: 10px;
-  padding-right: 10px
+  padding-left: 12rem;
+  padding-right: 12rem;
+  display: block;
 }
 .camera_caption h2 {
-  font-size: 72px;
+  font-size: 64px;
   line-height: 80px;
   font-weight: 900;
-  color: #fff
+  color: #fff;
+  margin-bottom: 0;
 }
 .camera_caption > div {
   height: 100%

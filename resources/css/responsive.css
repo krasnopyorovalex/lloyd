@@ -781,6 +781,9 @@
         float: none;
         margin: 0 0 1rem 0;
     }
+    .main-slider .item img {
+        height: 180px;
+    }
 }
 @media (min-width:768px) and (max-width:979px) {
     .camera_caption h2 {

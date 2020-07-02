@@ -651,3 +651,21 @@ footer .copyright {
 .contacts-map {
     height: 480px;
 }
+.main-slider {
+    position: relative;
+}
+.main-slider .item {
+    max-height: 570px;
+    text-align: center;
+}
+.main-slider .item img {
+    object-fit: cover;
+    transition: all 20s ease 0s;
+    height: 100%;
+}
+.main-slider .owl-item {
+    overflow: hidden;
+}
+.main-slider .owl-item.active img {
+    transform: scale(1.2);
+}

@@ -184,6 +184,19 @@ jQuery(document).ready(function() {
         });
     }
 
+    const mainSlider = jQuery(".main-slider");
+    if (mainSlider.length) {
+        mainSlider.owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            smartSpeed: 1000,
+            items: 1,
+            navText: ['<div class="camera_prev"></div>','<div class="camera_next"></div>']
+        });
+    }
+
     const gallery = jQuery(".product-gallery");
     if (gallery.length) {
         gallery.owlCarousel({
