@@ -48,7 +48,7 @@
                         <div class="col-md-5">
                             <div class="navbar-header">
                                 <a href="{{ route('page.show') }}" class="logo-link">
-                                    <img class="brand_img" src="{{ asset('images/evrosoyuz-es-evropa-flag.jpg') }}" title="Компания LLC CERNEL INDASTRIS GROUP" alt="Компания LLC CERNEL INDASTRIS GROUP"/>
+                                    <img class="brand_img" src="{{ asset('images/evrosoyuz-es-evropa-flag.gif') }}" title="Компания LLC CERNEL INDASTRIS GROUP" alt="Компания LLC CERNEL INDASTRIS GROUP"/>
                                     <span class="logo-info">с 2013 года на рынке<br />агропроизводства</span>
                                 </a>
                                 <div class="logo-lion">
