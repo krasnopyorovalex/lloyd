@@ -17,7 +17,7 @@ class FormHandlerController extends Controller
 {
     use DispatchesJobs;
 
-    private $to = 'djShtaket88@mail.ru';
+    private $to = ['djShtaket88@mail.ru', 'info@krasber.ru'];
 
     /**
      * @param OrderRequest $request
@@ -25,7 +25,7 @@ class FormHandlerController extends Controller
      */
     public function order(OrderRequest $request): array
     {
-        Mail::to([$this->to])->send(new OrderSent($request->validated()));
+        Mail::to($this->to)->send(new OrderSent($request->validated()));
 
         return [
             'message' => 'Форма отправлена успешно. Наш менеджер свяжется с Вами в ближайшее время',
