@@ -651,21 +651,87 @@ footer .copyright {
 .contacts-map {
     height: 480px;
 }
-.main-slider {
-    position: relative;
-}
-.main-slider .item {
-    max-height: 570px;
+.section-slider {
     text-align: center;
 }
-.main-slider .item img {
-    object-fit: cover;
-    transition: all 20s ease 0s;
-    height: 100%;
+.slick-dots {
+
 }
-.main-slider .owl-item {
+.slick-dots li.slick-active button:before {
+    color: #ffba00;
+}
+.slick-dots li button:before {
+    font-size: 20px;
+    color: #11ad25;
+    opacity: 1;
+}
+.slider {
+}
+.slider .slide {
+    position: relative;
     overflow: hidden;
+    -webkit-transition: all 2s ease 0s;
+    transition: all 2s ease 0s;
 }
-.main-slider .owl-item.active img {
+.slider .slide img {
+    position: relative;
+    -webkit-transition: all 20s ease 0s;
+    transition: all 20s ease 0s;
+    height: 480px;
+    width: 100%;
+}
+.slider .slide .slide-text {
+    width: 960px;
+    margin: 0 auto;
+    opacity: 0;
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%) scale(5);
+    -ms-transform: translate(-50%, -50%) scale(5);
+    transform: translate(-50%, -50%) scale(5);
+    -webkit-transition: all 2s ease 0s;
+    transition: all 2s ease 0s;
+}
+.slider .slide .slide-text h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        left: 200%;
+    }
+    50% {
+        opacity: 1;
+        left: 50%;
+    }
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        left: 200%;
+    }
+    50% {
+        opacity: 1;
+        left: 50%;
+    }
+}
+.slider .slide.slick-active img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
     transform: scale(1.2);
+}
+.slider .slide.slick-active .slide-text {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    -webkit-animation: slide 5s ease-in-out;
+    animation: slide 5s ease-in-out;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
 }

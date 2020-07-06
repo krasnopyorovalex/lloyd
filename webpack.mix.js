@@ -16,6 +16,8 @@ mix.js(['resources/js/owl/owl.carousel.min.js', 'resources/js/app.js'], 'public/
         'resources/css/bootstrap-grid.css',
         'resources/css/owl.carousel.min.css',
         'resources/css/owl.theme.default.min.css',
+        'resources/css/slick.css',
+        'resources/css/slick-theme.css',
         'resources/css/app.min.css',
         'resources/css/style.css',
         'resources/css/responsive.css'

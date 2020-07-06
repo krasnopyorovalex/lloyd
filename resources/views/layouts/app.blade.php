@@ -122,6 +122,7 @@
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/superfish.js') }}"></script>
     <script src="{{ asset('js/sticky_menu.js') }}"></script>
+    <script src="{{ asset('js/slick.js') }}"></script>
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
