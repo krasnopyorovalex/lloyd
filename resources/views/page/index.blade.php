@@ -60,7 +60,7 @@
                                     <td>
                                         Адрес:</td>
                                     <td>
-                                        КИПР, г.ЛИМАССОЛ, УЛ.ERESSOU 1 MESA GEITONIA. 40021
+                                        КИПР, г.ЛИМАССОЛ, УЛ.ERESSOU 1 MESA GEITONIA. 4002
                                     </td>
                                 </tr>
                                 <tr>

@@ -34,7 +34,7 @@
                                 <li class="fa"><a href="tel:+74951115932">+7 495 111 59 32</a> <span>Fax</span></li>
                                 <li class="fa fa-envelope"><a href="mailto:сernelgroup@te.net.ua">сernelgroup@te.net.ua</a></li>
                                 <li class="fa fa-map-marker">
-                                    <address>КИПР, г.ЛИМАССОЛ, УЛ.ERESSOU 1 MESA GEITONIA. 40021</address>
+                                    <address>КИПР, г.ЛИМАССОЛ, УЛ.ERESSOU 1 MESA GEITONIA. 4002</address>
                                 </li>
                             </ul>
                         </div>
@@ -77,7 +77,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="contacts">
-                            <li class="fa fa-map-marker">КИПР, г.ЛИМАССОЛ, УЛ.ERESSOU 1 MESA GEITONIA. 40021</li>
+                            <li class="fa fa-map-marker">КИПР, г.ЛИМАССОЛ, УЛ.ERESSOU 1 MESA GEITONIA. 4002</li>
                             <li class="fa fa-phone"><a href="tel:+380509821879">+38 (050) 982-18-79</a></li>
                             <li class="fa fa-envelope"><a href="mailto:lloydcg.uk@gmail.com">lloydcg.uk@gmail.com</a></li>
                             <li class="fa fa-envelope"><a href="mailto:certiscapgroup@hotmail.com">certiscapgroup@hotmail.com</a></li>
