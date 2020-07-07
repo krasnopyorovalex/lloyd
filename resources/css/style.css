@@ -735,3 +735,7 @@ footer .copyright {
     -webkit-transition: all 0s ease 0s;
     transition: all 0s ease 0s;
 }
+.section-slider {
+    max-height: 510px;
+    overflow: hidden;
+}
