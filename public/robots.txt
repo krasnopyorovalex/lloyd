@@ -1,2 +1,3 @@
 User-agent: *
 Host: https://certisgroup.eu.com
+Sitemap: https://certisgroup.eu.com/sitemap.xml

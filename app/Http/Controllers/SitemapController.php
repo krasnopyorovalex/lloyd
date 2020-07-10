@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Domain\Article\Queries\GetAllArticlesQuery;
-use App\Domain\Info\Queries\GetAllInfosQuery;
+use App\Domain\Catalog\Queries\GetAllCatalogsQuery;
 use App\Domain\Page\Queries\GetAllPagesQuery;
-use App\Domain\Producer\Queries\GetAllProducersQuery;
-use App\Domain\Project\Queries\GetAllProjectsQuery;
+use Illuminate\Http\Response;
 
 /**
  * Class SitemapController
@@ -15,24 +14,19 @@ use App\Domain\Project\Queries\GetAllProjectsQuery;
 class SitemapController extends Controller
 {
     /**
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
-    public function xml()
+    public function xml(): Response
     {
         $pages = $this->dispatch(new GetAllPagesQuery());
-//        $articles = $this->dispatch(new GetAllArticlesQuery(true));
-//        $news = $this->dispatch(new GetAllInfosQuery(true));
-
-        $producers = $this->dispatch(new GetAllProducersQuery());
-        $projects = $this->dispatch(new GetAllProjectsQuery());
+        $articles = $this->dispatch(new GetAllArticlesQuery(true));
+        $catalog = $this->dispatch(new GetAllCatalogsQuery());
 
         return response()
             ->view('sitemap.index', [
                 'pages' => $pages,
-                'producers' => $producers,
-                'projects' => $projects,
-//                'articles' => $articles,
-//                'news' => $news
+                'articles' => $articles,
+                'catalog' => $catalog
             ], 200)
             ->header('Content-Type', 'text/xml');
     }
