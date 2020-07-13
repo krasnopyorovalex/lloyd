@@ -112,6 +112,6 @@ if (! function_exists('format_as_price')) {
     {
         $value = number_format($price, 0, '.', ' ');
 
-        return  sprintf('%s $', $value);
+        return  sprintf('%s $/т', $value);
     }
 }
