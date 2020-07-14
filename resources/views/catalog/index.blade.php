@@ -34,20 +34,20 @@
                         <h1>{{ $catalog->name }}</h1>
 
                         @if($products)
-                            <div class="row project__box">
+                            <div class="row project__box" itemscope itemtype="http://schema.org/ImageObject">
                                 @foreach($products as $product)
                                     <div class="col-md-4">
                                         <div class="project">
                                             @if($product->image)
                                                 <figure>
                                                     <a href="{{ $product->url }}">
-                                                        <img src="{{ asset($product->image->path) }}" alt="{{ $product->image->alt }}" title="{{ $product->image->title }}">
+                                                        <img src="{{ asset($product->image->path) }}" alt="{{ $product->image->alt }}" title="{{ $product->image->title }}" itemprop="contentUrl">
                                                     </a>
                                                 </figure>
                                             @endif
                                             <div class="desc">
                                                 <div class="name">
-                                                    <a href="{{ $product->url }}">{{ $product->name }}</a>
+                                                    <a href="{{ $product->url }}" itemprop="name">{{ $product->name }}</a>
                                                 </div>
                                                 <div class="button-wrap">
                                                     <a href="{{ $product->url }}" class="btn2 btn2__color_mod">Подробнее</a>
