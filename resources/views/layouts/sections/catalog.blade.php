@@ -4,17 +4,17 @@
         <div class="row">
             @foreach($catalog as $item)
                 <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="box2">
+                    <div class="box2" itemscope itemtype="http://schema.org/ImageObject">
+                        @if($item->image)
                         <a class="thumb" href="{{ $item->url }}">
-                            @if($item->image)
-                            <img src="{{ $item->image->path }}" alt="{{ $item->image->alt }}" title="{{ $item->image->title }}">
+                            <img src="{{ $item->image->path }}" alt="{{ $item->image->alt }}" title="{{ $item->image->title }}" itemprop="contentUrl">
                             <span class="thumb_overlay"></span>
-                            @endif
                         </a>
+                        @endif
 
                         <div class="box2_cnt">
                             <h5 class="strong">
-                                <a href="{{ $item->url }}">{{ $item->name }}</a>
+                                <a href="{{ $item->url }}" itemprop="name">{{ $item->name }}</a>
                             </h5>
                         </div>
                     </div>

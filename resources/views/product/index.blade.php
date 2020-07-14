@@ -39,8 +39,8 @@
                                 @if(count($product->images))
                                 <div class="owl-carousel owl-theme product-gallery">
                                     @foreach($product->images as $image)
-                                    <div class="item">
-                                        <img src="{{ $image->getPath() }}" alt="{{ $image->alt }}" title="{{ $image->title }}">
+                                    <div class="item" itemscope itemtype="http://schema.org/ImageObject">
+                                        <img src="{{ $image->getPath() }}" alt="{{ $image->alt }}" title="{{ $image->title }}" itemprop="contentUrl">
                                     </div>
                                     @endforeach
                                 </div>

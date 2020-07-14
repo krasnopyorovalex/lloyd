@@ -5,10 +5,10 @@
                 <div class="col-12">
                     <div class="slider">
                         @foreach($slider->images as $image)
-                            <div class="slide">
-                                <img src="{{ asset($image->getPath()) }}" alt="{{ $image->alt }}">
+                            <div class="slide" itemscope itemtype="http://schema.org/ImageObject">
+                                <img src="{{ asset($image->getPath()) }}" alt="{{ $image->alt }}" itemprop="contentUrl">
                                 <div class="slide-text">
-                                    <h2>{{ $image->name }}</h2>
+                                    <h2 itemprop="name">{{ $image->name }}</h2>
                                 </div>
                             </div>
                         @endforeach
