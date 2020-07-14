@@ -34,10 +34,10 @@
                         <h1>{{ $catalog->name }}</h1>
 
                         @if($products)
-                            <div class="row project__box" itemscope itemtype="http://schema.org/ImageObject">
+                            <div class="row project__box">
                                 @foreach($products as $product)
                                     <div class="col-md-4">
-                                        <div class="project">
+                                        <div class="project" itemscope itemtype="http://schema.org/ImageObject">
                                             @if($product->image)
                                                 <figure>
                                                     <a href="{{ $product->url }}">
