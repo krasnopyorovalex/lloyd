@@ -64,7 +64,7 @@ class CatalogProduct extends Model
     /**
      * @var array
      */
-    protected $guarded= ['image'];
+    protected $guarded = ['image'];
 
     /**
      * @return HasOne

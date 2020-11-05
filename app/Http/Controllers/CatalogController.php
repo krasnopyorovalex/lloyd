@@ -24,7 +24,7 @@ class CatalogController extends Controller
 
         $catalogs = $this->dispatch(new GetAllCatalogsWithoutParentQuery());
 
-        $products = $catalog->products()->paginate();
+        $products = $catalog->products()->where('is_published', '1')->paginate();
 
         return view('catalog.index', [
             'catalog' => $catalog,

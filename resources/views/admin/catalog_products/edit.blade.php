@@ -44,6 +44,7 @@
                                         @input(['name' => 'alias', 'label' => 'Alias', 'entity' => $catalogProduct])
 
                                         @textarea(['name' => 'text', 'label' => 'Текст', 'entity' => $catalogProduct])
+                                        @checkbox(['name' => 'is_published', 'label' => 'Опубликовано?', 'entity' => $catalogProduct])
                                     </div>
                                     <div class="col-md-3">
                                         @if ($catalogProduct->image)

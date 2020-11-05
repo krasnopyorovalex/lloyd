@@ -23,6 +23,7 @@ class UpdateCatalogProductRequest extends Request
             'props' => 'string|nullable',
             'pos' => 'integer|min:0|max:255',
             'on_request' => 'boolean',
+            'is_published' => 'digits_between:0,1',
             'alias' => [
                 'required',
                 'max:255',
