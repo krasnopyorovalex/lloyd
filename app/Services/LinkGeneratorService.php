@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Catalog;
+use App\CatalogProduct;
 use Illuminate\Support\Str;
 
 /**
@@ -18,6 +19,7 @@ class LinkGeneratorService
         'App\Page' => 'Страницы',
 //        'App\Producer' => 'Поставщики',
         Catalog::class => 'Каталог',
+        CatalogProduct::class => 'Каталог товаров',
         //'App\Service' => 'Номера',
         'App\Article' => 'Статьи',
         //'App\Info' => 'Новости'

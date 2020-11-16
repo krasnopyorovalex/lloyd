@@ -31,7 +31,7 @@
                                     <a href="tel:+79681934546">+7 968 193 45 46</a>
                                     <img src="{{ asset('images/whatsapp.svg') }}" alt="">
                                 </li>
-                                <li class="fa"><a href="tel:+74951115932">+7 495 111 59 32</a> <span>Fax</span></li>
+                                <li class="fa"><a href="tel:+74993440580">+7 499 344 05 80</a> <span>Fax</span></li>
                                 <li class="fa fa-envelope"><a href="mailto:сernelgroup@te.net.ua">сernelgroup@te.net.ua</a></li>
                                 <li class="fa fa-map-marker">
                                     <address>КИПР, г.ЛИМАССОЛ, УЛ.ERESSOU 1 MESA GEITONIA. 4002</address>

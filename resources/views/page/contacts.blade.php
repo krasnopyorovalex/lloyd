@@ -65,7 +65,7 @@
                                     <img src="{{ asset('images/telegram.svg') }}" alt="">
                                 </div>
                                 <div class="phone-item">
-                                    <a href="tel:+74951115932">+7 495 111 59 32</a>
+                                    <a href="tel:+74993440580">+7 499 344 05 80</a>
                                     <span>Fax</span>
                                 </div>
                             </li>
